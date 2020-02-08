@@ -1,0 +1,50 @@
+.portfolio {
+    padding: 95px 0;
+    background-color: $white;
+    color: $black;
+    text-align: center;
+
+    .sectionDescr {
+        margin-top: 70px;
+        margin-bottom: 105px;
+    }
+
+    .filter {
+        display: flex;
+        justify-content: space-between;
+
+        .filterList {
+            display: flex;
+            justify-content: space-between;
+            width: 420px;
+            margin-bottom: 50px;
+
+            .filterItem:not(:last-child)::after {
+                content: '|';
+                position: absolute;
+                padding-left: 15px;
+            }
+        }
+    }
+
+    .portfolioList {
+        display: flex;
+        flex-wrap: wrap;
+
+        .portfolioItem {
+            width: 252px;
+            height: 237px;
+            background-color: blueviolet;
+            margin-right: 30px;
+            margin-bottom: 30px;
+
+            &:nth-child(4n) {
+                margin-right: 0;
+            }
+
+            &:nth-last-child(-n+4) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

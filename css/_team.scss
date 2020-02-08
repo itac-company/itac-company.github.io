@@ -1,0 +1,36 @@
+.team {
+    padding: 100px 0;
+    text-align: center;
+
+    background: url(../assets/teamBg.png) no-repeat center;
+    background-size: cover;
+}
+
+.teamList {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 125px;
+
+    .teamMember {
+        background-image: url(../assets/photo.png);
+        background-position: top center;
+        background-repeat: no-repeat;
+        padding-top: 150px;
+        max-width: 250px;
+
+        .name {
+            font-size: 20px;
+            color: $yellow;
+        }
+
+        .prof {
+            font-size: 16px;
+        }
+
+        .memberDescr {
+            font-size: 14px;
+            margin-top: 20px;
+        }
+    }
+}
+

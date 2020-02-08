@@ -5,62 +5,234 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,400i,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <img class="bg" src="assets/bg.svg.png" alt="">
-    <div class="welcomePage">
-        <header class="header">
-            <div class="container header-container">
-                <svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="83" height="36" viewBox="0 0 83 36">
-                    <image id="Фигура_3" data-name="Фигура 3" width="83" height="36"
-                        xlink:href="data:img/png;base64,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" />
-                </svg>
+    <section class="welcomePage">
+        <div class="container">
+            <header class="header">
+                <img src="assets/logo.svg" alt="logo">
 
-                <a href="#"><svg class="burger" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" width="57px" height="39px" fill="rgb(255, 255, 255)">
-                        <path class="burger" fill-rule="evenodd"
-                            d="M57.000,0.929 C57.000,1.442 56.608,1.857 56.123,1.857 L15.785,1.857 C15.300,1.857 14.908,1.442 14.908,0.929 C14.908,0.415 15.300,-0.000 15.785,-0.000 L56.123,-0.000 C56.608,-0.000 57.000,0.415 57.000,0.929 ZM56.123,12.071 L3.508,12.071 C3.023,12.071 2.631,12.487 2.631,13.000 C2.631,13.513 3.023,13.928 3.508,13.928 L56.123,13.928 C56.608,13.928 57.000,13.513 57.000,13.000 C57.000,12.487 56.608,12.071 56.123,12.071 ZM56.123,25.071 L11.400,25.071 C10.915,25.071 10.523,25.487 10.523,26.000 C10.523,26.513 10.915,26.929 11.400,26.929 L56.123,26.929 C56.608,26.929 57.000,26.513 57.000,26.000 C57.000,25.487 56.608,25.071 56.123,25.071 ZM56.123,37.143 L0.877,37.143 C0.392,37.143 -0.000,37.558 -0.000,38.072 C-0.000,38.585 0.392,39.000 0.877,39.000 L56.123,39.000 C56.608,39.000 57.000,38.585 57.000,38.072 C57.000,37.558 56.608,37.143 56.123,37.143 Z" />
-                    </svg>
-                </a>
-            </div>
-        </header>
+                <nav class="headerNav">
+                    <ul class="navList">
+                        <li class="navItem">
+                            <a href="#">Главная</a>
+                        </li>
 
-        <main class="main">
-            <div class="container">
-                <h1>
-                    <div class="yellowText">Итак</div>
-                    как вы хотите создать
-                    <div class="yellowText">сайт</div>
-                </h1>
+                        <li class="navItem">
+                            <a href="#">О нас</a>
+                        </li>
+
+                        <li class="navItem">
+                            <a href="#">Конфигуратор</a>
+                        </li>
+
+                        <li class="navItem">
+                            <a href="#">Портфолио</a>
+                        </li>
+
+                        <li class="navItem no-margin">
+                            <a href="#">Услуги</a>
+                        </li>
+
+                        <li class="navItem gold">
+                            <a href="#">+8 812 345 55 16</a>
+                        </li>
+
+                        <li class="navItem gold">
+                            <a href="#">ITAC.STUDIO@GMAIL.COM</a>
+                        </li>
+                    </ul>
+
+                    <img class="burger" src="assets/burger.svg" alt="burger">
+                </nav>
+            </header>
+
+            <div class="main">
+                <h1><span>Итак<br /></span> нужно <span> решение<br /></span>для <span>сайта</span></h1>
+
+                <p>Разрабатываем комплексное решение для реализаций потенциала вашего бизнеса</p>
 
                 <div class="buttons">
-                    <div class="btnBlock selfBlock">
-                        <button class="selfBtn">самому</button>
-                        <div class="btnDescr">
-                            Начните
-                            с выбора типа сайта,
-                            выбирите необходимые функций
-                            и элементы дизайна.
-                        </div>
-                    </div>
+                    <button>Решение</button>
 
-                    <div class="btnBlock helpBlock">
-                        <button class="helpBtn">С нами</button>
-                        <div class="btnDescr">Ответьте
-                            на базовые вопросы
-                            и получите сайт
-                            созданный на основе
-                            ваших предпочтений
-                        </div>
-                    </div>
+                    <button>О нас</button>
+                </div>
+
+            </div>
+
+            <div class="mainFooter">
+                <div class="contacts">
+                    <div class="tel">+8 812 345 55 16</div>
+                    <div class="email">ITAC.STUDIO@GMAIL.COM</div>
+                </div>
+
+                <img src="assets/arrow.svg" alt="">
+
+                <div class="socialMedia">
+                    <img src="assets/vk.svg" alt="">
+                    <img src="assets/fb.svg" alt="">
+                    <img src="assets/ig.svg" alt="">
+                    <img src="assets/shareIcon.svg" alt="">
                 </div>
             </div>
-        </main>
-    </div>
+        </div>
+    </section>
+
+    <section class="aboutUs">
+        <div class="container">
+            <h2 class="title">
+                О нас
+            </h2>
+
+            <p class="sectionDescr">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto delectus labore beatae alias quas ipsum,
+                eveniet voluptate a nihil explicabo veritatis amet praesentium, accusantium tempora fugiat. Labore atque
+                fugit, praesentium sit voluptatum necessitatibus quo sed incidunt, mollitia doloremque ea officia
+                magnam. Sequi nemo ut explicabo voluptatum, magni tempore accusamus officia illum perferendis quo
+                asperiores natus saepe nihil amet tenetur sapiente quasi magnam animi, maxime fugit numquam? Iusto sint
+                placeat, quidem at quae qui nulla omnis.
+            </p>
+        </div>
+    </section>
+
+    <section class="team">
+        <div class="container">
+            <h2 class="title">Наша команда</h2>
+
+            <ul class="teamList">
+                <li class="teamMember">
+                    <h3 class="name">Сергей Сафронов</h3>
+
+                    <p class="prof">Продвижение</p>
+
+                    <p class="memberDescr">Пссс парень СЕО продвижение надо.
+                        Черный пояс по яндекс директ.
+                        В совершенсвте владеет Google Adwords.</p>
+                </li>
+
+                <li class="teamMember">
+                    <h3 class="name">Богдан Климов</h3>
+
+                    <p class="prof">Фронтенд</p>
+
+                    <p class="memberDescr">Я твой сайт главный страница верстал.
+                        Верстаю как хочу законом
+                        не запрещено.</p>
+                </li>
+
+                <li class="teamMember">
+                    <h3 class="name">Анонимный Анониус</h3>
+
+                    <p class="prof">Теневой кардинал</p>
+
+                    <p class="memberDescr">Почетный член массонской ложи.
+                        Главый теневой кукловод современности.
+                        Возможно рептилоид.</p>
+                </li>
+
+                <li class="teamMember">
+                    <h3 class="name">Богдан Шевченко</h3>
+
+                    <p class="prof">Десигн</p>
+
+                    <p class="memberDescr">Уехал бухать на неделю в Воронеж
+                        вернулся дизайнером.
+                        Жестко сидит на behance и энергетиках.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <div class="container">
+            <h2 class="title">Галерея наших работ</h2>
+
+            <p class="sectionDescr">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et
+                Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the
+                theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor
+                sit amet..", comes from a line in section 1.10.32.</p>
+
+            <div class="filter">
+                <p>Фильтр</p>
+
+                <ul class="filterList">
+                    <li class="filterItem">
+                        <a href="#">Все</a>
+                    </li>
+
+                    <li class="filterItem">
+                        <a href="#">Web дизайн</a>
+                    </li>
+
+                    <li class="filterItem">
+                        <a href="#">Мобильный дизайн</a>
+                    </li>
+
+                    <li class="filterItem">
+                        <a href="#">Фотография</a>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="portfolioList">
+                <li class="portfolioItem"></li>
+                <li class="portfolioItem"></li>
+                <li class="portfolioItem"></li>
+                <li class="portfolioItem"></li>
+                <li class="portfolioItem"></li>
+                <li class="portfolioItem"></li>
+                <li class="portfolioItem"></li>
+                <li class="portfolioItem"></li>
+                <li class="portfolioItem"></li>
+                <li class="portfolioItem"></li>
+                <li class="portfolioItem"></li>
+                <li class="portfolioItem"></li>
+            </ul>
+
+        </div>
+    </section>
+
+    <section class="configure">
+        <div class="container">
+            <h2 class="title"><span>Итак</span><br />что вам понадобится</h2>
+
+            <p class="sectionDescr">Выберите один или несколько вариантов</p>
+
+            <ul class="optionsList">
+                <li class="option">
+                    <button>Сайт</button>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore.
+                    </p>
+                </li>
+
+                <li class="option">
+                    <button>Сайт</button>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore.
+                    </p>
+                </li>
+
+                <li class="option">
+                    <button>Сайт</button>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore.
+                    </p>
+                </li>
+            </ul>
+
+            <button class="begin">Начать</button>
+        </div>
+    </section>
 </body>
 
 </html>

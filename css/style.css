@@ -1,98 +1,392 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
+@charset "UTF-8";
 .welcomePage {
-    height: 100vh;
-}
-
-h1  {
-    margin-top: 20vh;
-    text-transform: uppercase;
-    line-height: 1.5;
-    color: #999999;
-    font-size: 44px;
-    display: block;
-    letter-spacing: 2px;
-    margin-bottom: 70px;
-}
-
-button {
-    width: 180px;
-    color: black;
-    height: 45px;
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-    border-radius: 3px;
-    border: none;
-    cursor: pointer;
-    background-color: white;
-}
-
-button:hover {
-    background-color: #fcac45;
-    transition: .2s ease-in-out;
-}
-
-.yellowText {
-    color: #fcac45;
-}
-
-body {
-    background-color: black;
+  padding-top: 35px;
+  padding-bottom: 70px;
+  background-image: url(../assets/mainBg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 .header {
-    padding-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headerNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.burger {
+  margin-left: 80px;
+}
+
+.navList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 490px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.navItem {
+  margin-right: 35px;
+}
+
+.no-margin {
+  margin-right: 0;
+}
+
+.gold {
+  color: #e7bb7d;
+}
+
+.navItem:last-child {
+  margin-right: 0;
+}
+
+.main {
+  margin-top: 85px;
+}
+
+.main h1 {
+  font-size: 99px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-family: Intro;
+}
+
+.main h1 span {
+  color: #e7bb7d;
+}
+
+.main p {
+  font-size: 20px;
+  margin-top: 25px;
+  margin-bottom: 55px;
+}
+
+.main .buttons {
+  text-align: center;
+}
+
+.main button {
+  width: 140px;
+  height: 42px;
+  background-color: #fffdd9;
+  color: #010101;
+  border: none;
+  border-radius: 3px;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-transition: background-color .2s;
+  transition: background-color .2s;
+  margin-right: 20px;
+}
+
+.main button:hover {
+  background-color: #e7bb7d;
+}
+
+.mainFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 70px;
+}
+
+.socialMedia img {
+  margin-right: 20px;
+}
+
+.socialMedia img:last-child {
+  margin-right: 0;
+}
+
+.aboutUs {
+  color: #030303;
+  background-color: #fffdd9;
+  padding-top: 145px;
+  padding-bottom: 145px;
+  background: url(../assets/aboutUsBg.png) no-repeat right #fffdd9;
+}
+
+.aboutUs .sectionDescr {
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+.title {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: Intro;
+}
+
+.team {
+  padding: 100px 0;
+  text-align: center;
+  background: url(../assets/teamBg.png) no-repeat center;
+  background-size: cover;
+}
+
+.teamList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 125px;
+}
+
+.teamList .teamMember {
+  background-image: url(../assets/photo.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-top: 150px;
+  max-width: 250px;
+}
+
+.teamList .teamMember .name {
+  font-size: 20px;
+  color: #e7bb7d;
+}
+
+.teamList .teamMember .prof {
+  font-size: 16px;
+}
+
+.teamList .teamMember .memberDescr {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.portfolio {
+  padding: 95px 0;
+  background-color: #fffdd9;
+  color: #030303;
+  text-align: center;
+}
+
+.portfolio .sectionDescr {
+  margin-top: 70px;
+  margin-bottom: 105px;
+}
+
+.portfolio .filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.portfolio .filter .filterList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 420px;
+  margin-bottom: 50px;
+}
+
+.portfolio .filter .filterList .filterItem:not(:last-child)::after {
+  content: '|';
+  position: absolute;
+  padding-left: 15px;
+}
+
+.portfolio .portfolioList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.portfolio .portfolioList .portfolioItem {
+  width: 252px;
+  height: 237px;
+  background-color: blueviolet;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.portfolio .portfolioList .portfolioItem:nth-child(4n) {
+  margin-right: 0;
+}
+
+.portfolio .portfolioList .portfolioItem:nth-last-child(-n+4) {
+  margin-bottom: 0;
+}
+
+.configure {
+  text-align: center;
+  padding: 105px 0;
+  background: url(../assets/chooseBg.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.configure span {
+  color: #e7bb7d;
+}
+
+.configure button {
+  margin-bottom: 45px;
+  width: 180px;
+  height: 45px;
+  background-color: #fffdd9;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 20px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.configure button:hover {
+  background-color: #e7bb7d;
+}
+
+.configure .sectionDescr {
+  margin-top: 80px;
+  margin-bottom: 60px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.configure .optionsList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 585px;
+  margin: 0 auto;
+  margin-bottom: 55px;
+}
+
+.configure .optionsList .option {
+  max-width: 180px;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* width и height включают в себя значения полей и границ */
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  /* наследует от html */
+  margin: 0;
+  /* Убирает отступы по умолчанию */
+}
+
+body {
+  min-width: 320px;
+  /* body не адаптируется под ширину экрана менее 1000px */
+  font-family: "Roboto condensed", sans-serif;
+  /* основной шрифт */
+  font-size: 16px;
+  /* основной размер шрифта */
+  line-height: 1.5;
+  /* высота линии для всего документа */
+  color: #fffdd9;
+  /* основной цвет шрифта */
+  background-color: black;
+}
+
+h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body.modal-active {
+  overflow: hidden;
+  /* скрывает лишнее */
+}
+
+img {
+  max-width: 100%;
+  /* растягивает картинку на всю ширину родительского элемента */
+}
+
+a {
+  text-decoration: none;
+  /* убирает подчеркивание ссылки */
+  color: inherit;
+  /* позволяет наследовать цвет шрифта от родительского элемента */
+}
+
+ul {
+  list-style-type: none;
+}
+
+.visually-hidden {
+  /* доступно скрывает элемент */
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 
 .container {
-    max-width: 1100px;
-    margin: 0 auto;
-    text-align: center;
+  max-width: 1140px;
+  min-width: 320px;
+  /* ширина основного контента */
+  margin: 0 auto;
+  padding: 0 20px;
+  /* центрирование */
 }
 
-.header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.clearfix:after {
+  /* лечит нулевую высоту div при использовании параметра float */
+  content: " ";
+  /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
 }
 
-.bg {
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    z-index: -1;
+@font-face {
+  font-family: Intro;
+  src: url("Intro.otf");
 }
-
-.burger:hover {
-    fill: #fcac45;
-    transition: .5s;
-}
-
-.buttons {
-    display: flex;
-    justify-content: center;
-
-}
-
-.selfBlock {
-    margin-right: 70px;
-}
-
-.btnBlock {
-    width: 180px;
-    color: #999999;
-    line-height: 1.6;
-
-}
-
-.btnDescr {
-    margin-top: 40px;
-}
+/*# sourceMappingURL=style.css.map */
