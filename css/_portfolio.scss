@@ -1,28 +1,50 @@
 .portfolio {
-    padding: 95px 0;
+    padding: 105px 0 110px;
     background-color: $white;
     color: $black;
     text-align: center;
 
     .sectionDescr {
-        margin-top: 70px;
-        margin-bottom: 105px;
+        margin-top: 58px;
+        margin-bottom: 100px;
+        font-style: italic;
+        color: #6c6c6c;
+        max-width: 1000px;
+        margin: 58px auto 100px;
     }
 
     .filter {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 43px;
+
+        p {
+            text-transform: uppercase;
+        }
 
         .filterList {
             display: flex;
             justify-content: space-between;
             width: 420px;
-            margin-bottom: 50px;
+            color: #6c6c6c;
+
+            .filterItem {
+                transition: color .2s;
+            }
+            
+            .filterItem:hover {
+                color: $black;
+            }
+
+            .active {
+                color: $black;
+            }
 
             .filterItem:not(:last-child)::after {
                 content: '|';
                 position: absolute;
-                padding-left: 15px;
+                padding-left: 10px;
+                color: #6c6c6c;
             }
         }
     }
@@ -30,10 +52,11 @@
     .portfolioList {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
 
         .portfolioItem {
-            width: 252px;
-            height: 237px;
+            width: 225px;
+            height: 202px;
             background-color: blueviolet;
             margin-right: 30px;
             margin-bottom: 30px;

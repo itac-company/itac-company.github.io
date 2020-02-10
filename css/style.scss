@@ -1,9 +1,13 @@
 @import '_variables';
+@import '_mixins';
 @import '_welcome';
 @import '_aboutUs';
 @import '_team';
 @import '_portfolio';
 @import '_configure';
+@import '_reviews';
+@import '_feedBack';
+@import '_stages';
 
 html {
     box-sizing: border-box; /* width и height включают в себя значения полей и границ */
@@ -17,6 +21,8 @@ html {
 }
 
 body {
+    letter-spacing: 1px;
+    scroll-behavior: smooth;
     min-width: 320px; /* body не адаптируется под ширину экрана менее 1000px */
     font-family: "Roboto condensed", sans-serif; /* основной шрифт */
     font-size: 16px; /* основной размер шрифта */
@@ -65,6 +71,13 @@ ul {
     padding: 0 20px; /* центрирование */
 }
 
+.containerSmall {
+    max-width: 1030px;
+    min-width: 320px; /* ширина основного контента */
+    margin: 0 auto;
+    padding: 0 20px; /* центрирование */
+}
+
 .clearfix:after { /* лечит нулевую высоту div при использовании параметра float */
    content: " "; /* Older browser do not support empty content */
    visibility: hidden;
@@ -76,4 +89,22 @@ ul {
 @font-face {
     font-family: Intro;
     src: url('Intro.otf');
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: $black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $yellow;
+    border-radius: 8px;
+    border: 2px solid $black; 
+}
+
+::-webkit-input-placeholder {
+    color: white;
 }

@@ -5,16 +5,20 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    height: 100vh;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .headerNav {
     display: flex;
+    position: fixed;
+    right: 21vw;
 }
 
 .burger {
@@ -23,11 +27,18 @@
 
 .navList {
     display: flex;
-    max-width: 490px;
+    max-width: 530px;
     flex-wrap: wrap;
     justify-content: flex-end;
     font-weight: 300;
     text-transform: uppercase;
+    overflow: hidden;
+    transform: translateX(2000px);
+    transition: transform .5s ease-in-out;
+}
+
+.navListOn {
+    transform: translateX(0);
 }
 
 .navItem {
@@ -47,10 +58,10 @@
 }
 
 .main {
-    margin-top: 85px;
+    margin-top: 13vh;
 
     h1 {
-        font-size: 99px;
+        font-size: 10vh;
         text-transform: uppercase;
         line-height: 1.2;
         font-family: Intro;
@@ -61,31 +72,17 @@
     }
 
     p {
-        font-size: 20px;
-        margin-top: 25px;
-        margin-bottom: 55px;
-    }
-
-    .buttons {
-        text-align: center;
+        font-size: 2.5vh;
+        margin-top: 3vh;
+        margin-bottom: 7vh;
+        color: #d7d4d5;
     }
 
     button {
-        width: 140px;
-        height: 42px;
-        background-color: $white;
-        color: #010101;
-        border: none;
-        border-radius: 3px;
-        font-size: 20px;
-        font-weight: 700;
-        text-transform: uppercase;
-        transition: background-color .2s;
-        margin-right: 20px;
-
-        &:hover {
-            background-color: $yellow;
-        }
+        @include buttonStyle;
+        margin-left: 50%;
+        margin-right: 0;
+        transform: translateX(-50%);
     }
 }
 
@@ -93,15 +90,41 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 70px;
+    margin-top: 11vh;
+}
+
+.contacts {
+    font-weight: 300;
 }
 
 .socialMedia {
+    display: flex;
+    align-items: center;
+    
     img {
         margin-right: 20px;
     }
 
     img:last-child {
         margin-right: 0;
+    }
+}
+
+.arrow {
+    margin-left: 38px;
+    animation: arrowAnim 1s alternate infinite;
+}
+
+@keyframes arrowAnim {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
     }
 }

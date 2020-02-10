@@ -1,0 +1,18 @@
+.reviews {
+    color: $black;
+    background-color: white;
+    padding: 120px 0 105px;
+    text-align: center;
+
+    .reviewItem {
+        font-size: 20px;
+        margin-top: 70px;
+        margin-bottom: 25px;
+
+        .person {
+            span {
+                font-family: 'Open Sans'
+            }
+        }
+    }
+}

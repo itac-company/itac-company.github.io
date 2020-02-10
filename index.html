@@ -9,12 +9,13 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Itac</title>
 </head>
 
 <body>
-    <section class="welcomePage">
-        <div class="container">
+    <section id="welcomePage" class="welcomePage">
+        <a "></a>
+        <div class=" container">
             <header class="header">
                 <img src="assets/logo.svg" alt="logo">
 
@@ -29,7 +30,7 @@
                         </li>
 
                         <li class="navItem">
-                            <a href="#">Конфигуратор</a>
+                            <a href="./configure/configure.html">Конфигуратор</a>
                         </li>
 
                         <li class="navItem">
@@ -58,11 +59,7 @@
 
                 <p>Разрабатываем комплексное решение для реализаций потенциала вашего бизнеса</p>
 
-                <div class="buttons">
-                    <button>Решение</button>
-
-                    <button>О нас</button>
-                </div>
+                <button id="btn">Решение</button>
 
             </div>
 
@@ -72,7 +69,7 @@
                     <div class="email">ITAC.STUDIO@GMAIL.COM</div>
                 </div>
 
-                <img src="assets/arrow.svg" alt="">
+                <img class="arrow" src="assets/arrow.svg" alt="">
 
                 <div class="socialMedia">
                     <img src="assets/vk.svg" alt="">
@@ -81,7 +78,7 @@
                     <img src="assets/shareIcon.svg" alt="">
                 </div>
             </div>
-        </div>
+            </div>
     </section>
 
     <section class="aboutUs">
@@ -96,7 +93,7 @@
                 fugit, praesentium sit voluptatum necessitatibus quo sed incidunt, mollitia doloremque ea officia
                 magnam. Sequi nemo ut explicabo voluptatum, magni tempore accusamus officia illum perferendis quo
                 asperiores natus saepe nihil amet tenetur sapiente quasi magnam animi, maxime fugit numquam? Iusto sint
-                placeat, quidem at quae qui nulla omnis.
+                placeat, quidem at quae qui nulla omnis. quidem at quae qui nulla omnis.
             </p>
         </div>
     </section>
@@ -150,8 +147,9 @@
     </section>
 
     <section class="portfolio">
-        <div class="container">
-            <h2 class="title">Галерея наших работ</h2>
+        <h2 class="title">Галерея наших работ</h2>
+
+        <div class="containerSmall">
 
             <p class="sectionDescr">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et
                 Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the
@@ -162,7 +160,7 @@
                 <p>Фильтр</p>
 
                 <ul class="filterList">
-                    <li class="filterItem">
+                    <li class="filterItem active">
                         <a href="#">Все</a>
                     </li>
 
@@ -198,6 +196,86 @@
         </div>
     </section>
 
+    <div class="stages">
+        <div class="container">
+            <h2 class="title">Путь клиента</h2>
+
+            <ul class="stagesList">
+                <li class="stageItem">
+                    <p class="stageNum">1 этап</p>
+
+                    <p class="stageTitle">Lorem ipsum dolor</p>
+
+                    <p class="stageDescr">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        <span>exercitation</span>
+                    </p>
+                </li>
+
+                <li class="stageItem">
+                    <p class="stageNum">2 этап</p>
+
+                    <p class="stageTitle">Lorem ipsum dolor</p>
+
+                    <p class="stageDescr">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        <span>exercitation</span>
+                    </p>
+                </li>
+
+                <li class="stageItem">
+                    <p class="stageNum">3 этап</p>
+
+                    <p class="stageTitle">Lorem ipsum dolor</p>
+
+                    <p class="stageDescr">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        <span>exercitation</span>
+                    </p>
+                </li>
+
+                <li class="stageItem">
+                    <p class="stageNum">4 этап</p>
+
+                    <p class="stageTitle">Lorem ipsum dolor</p>
+
+                    <p class="stageDescr">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        <span>exercitation</span>
+                    </p>
+                </li>
+
+                <li class="stageItem">
+                    <p class="stageNum">5 этап</p>
+
+                    <p class="stageTitle">Lorem ipsum dolor</p>
+
+                    <p class="stageDescr">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        <span>exercitation</span>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="reviews">
+        <div class="container">
+            <h2 class="title">Отзывы</h2>
+
+            <p class="reviewItem">
+                ТАКОЙ САЙТ ЗАПИЛИЛИ Я ПРОСТО В ШОКЕ НЕДЕЛЮ СМОТРЕТ В МАНИТОР, А ПРОДВИЖЕНИЕ ВАЩЕ ПУШКА ЗА НЕДЕЛЮ ПО
+                ОРАГНИКЕ
+                НА ПЕРВУЮ СТРОЧКУ ВЫВОДИТ ЕСЛИ НАЗВАНИЕ СВОЕЙ ФИРМЫ ЗАБИВАЮ.
+                КОРОЧЕ ВАУ ВСЕМ РЕКОМЕНДУЮ.
+            </p>
+
+            <p class="person">
+                Рулон Обоев, <span>Частный преприниматель.</span>
+            </p>
+        </div>
+    </section>
+
     <section class="configure">
         <div class="container">
             <h2 class="title"><span>Итак</span><br />что вам понадобится</h2>
@@ -214,7 +292,7 @@
                 </li>
 
                 <li class="option">
-                    <button>Сайт</button>
+                    <button>Продвижение</button>
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore.
@@ -222,7 +300,7 @@
                 </li>
 
                 <li class="option">
-                    <button>Сайт</button>
+                    <button>Поддержка</button>
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore.
@@ -233,6 +311,51 @@
             <button class="begin">Начать</button>
         </div>
     </section>
+
+    <section class="feedBack">
+        <div class="container">
+            <h2 class="title">
+                <span>Итак</span>, есть вопросы?
+            </h2>
+
+            <p class="sectionDescr">
+                Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of
+                Good
+                and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+                during
+                the Renaissance.
+            </p>
+
+            <form action="#">
+                <input class="nameInput" type="text" placeholder="Как вас зовут?">
+                <input class="telInput" type="text" placeholder="Номер телефона">
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footerContainer">
+            <img src="./assets/logo.svg" alt="" class="logo">
+
+            <p class="copyright">Все права защищены 2020 ИТАК</p>
+
+            <a href="#welcomePage" class="goUpBtn">Наверх</a>
+
+            <div class="footerContacts">
+                <div class="tel">+7 (812) 345 55 16</div>
+                <div class="email">ITAC.STUDIO@GMAIL.COM</div>
+            </div>
+
+            <div class="socialMedia">
+                <img src="assets/vk.svg" alt="">
+                <img src="assets/fb.svg" alt="">
+                <img src="assets/ig.svg" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

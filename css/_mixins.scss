@@ -1,0 +1,16 @@
+@mixin buttonStyle {
+    width: 234px;
+    height: 45px;
+    background-color: $white;
+    color: #010101;
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background-color .2s;
+
+    &:hover {
+        background-color: $yellow;
+    }
+}

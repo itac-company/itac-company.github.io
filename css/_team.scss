@@ -1,5 +1,5 @@
 .team {
-    padding: 100px 0;
+    padding: 100px 0 205px;
     text-align: center;
 
     background: url(../assets/teamBg.png) no-repeat center;
@@ -9,27 +9,31 @@
 .teamList {
     display: flex;
     justify-content: space-between;
-    margin-top: 125px;
+    margin-top: 112px;
 
     .teamMember {
         background-image: url(../assets/photo.png);
         background-position: top center;
         background-repeat: no-repeat;
-        padding-top: 150px;
-        max-width: 250px;
+        padding-top: 136px;
+        max-width: 230px;
 
         .name {
+            line-height: 0.8;
             font-size: 20px;
             color: $yellow;
+            font-weight: 400;
         }
 
         .prof {
+            margin-top: 10px;
             font-size: 16px;
         }
 
         .memberDescr {
             font-size: 14px;
             margin-top: 20px;
+            line-height: 24px;              
         }
     }
 }
