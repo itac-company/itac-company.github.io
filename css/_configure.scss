@@ -17,6 +17,10 @@
         @include buttonStyle;
     }
 
+    .btnRed {
+        background-color: $yellow;
+    }
+
     .sectionDescr {
         margin-top: 35px;
         margin-bottom: 80px;
@@ -44,4 +48,13 @@
             }
         } 
     }
+}
+
+.beginBtn {
+    transform: scale(0);
+    transition: .3s;
+}
+
+.beginBtnExpand {
+    transform: scale(1);
 }

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,400i,700&display=swap&subset=cyrillic"
         rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
@@ -13,45 +14,50 @@
 </head>
 
 <body>
+    <nav class="headerNav clearfix">
+        <ul class="navList">
+            <li class="navItem">
+                <a href=".welcomePage">Главная</a>
+            </li>
+
+            <li class="navItem">
+                <a href=".aboutUs">О нас</a>
+            </li>
+
+            <li class="navItem">
+                <a href="./configure/configure.html">Конфигуратор</a>
+            </li>
+
+            <li class="navItem">
+                <a href=".portfolio">Портфолио</a>
+            </li>
+
+            <li class="navItem no-margin">
+                <a href=".configure">Услуги</a>
+            </li>
+
+            <li class="navItem gold">
+                <a href="#">+8 812 345 55 16</a>
+            </li>
+
+            <li class="navItem gold">
+                <a href="#">ITAC.STUDIO@GMAIL.COM</a>
+            </li>
+        </ul>
+
+        <svg class="burger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="71px"
+            height="45px">
+            <path fill-rule="evenodd" fill="rgb(255, 255, 253)"
+                d="M-0.000,1.071 C-0.000,1.664 0.481,2.143 1.076,2.143 L53.788,2.143 C54.382,2.143 54.864,1.664 54.864,1.071 C54.864,0.479 54.382,-0.000 53.788,-0.000 L1.076,-0.000 C0.481,-0.000 -0.000,0.479 -0.000,1.071 ZM1.076,13.928 L53.788,13.928 C54.382,13.928 54.864,14.408 54.864,15.000 C54.864,15.592 54.382,16.071 53.788,16.071 L1.076,16.071 C0.481,16.071 -0.000,15.592 -0.000,15.000 C-0.000,14.408 0.481,13.928 1.076,13.928 ZM1.076,28.928 L53.788,28.928 C54.382,28.928 54.864,29.407 54.864,29.999 C54.864,30.592 54.382,31.071 53.788,31.071 L1.076,31.071 C0.481,31.071 -0.000,30.592 -0.000,29.999 C-0.000,29.407 0.481,28.928 1.076,28.928 ZM1.076,42.857 L53.788,42.857 C54.382,42.857 54.864,43.336 54.864,43.928 C54.864,44.520 54.382,45.000 53.788,45.000 L1.076,45.000 C0.481,45.000 -0.000,44.520 -0.000,43.928 C-0.000,43.336 0.481,42.857 1.076,42.857 ZM61.318,-0.000 L69.924,-0.000 C70.519,-0.000 71.000,0.479 71.000,1.071 C71.000,1.664 70.519,2.143 69.924,2.143 L61.318,2.143 C60.724,2.143 60.242,1.664 60.242,1.071 C60.242,0.479 60.724,-0.000 61.318,-0.000 ZM61.318,13.928 L69.924,13.928 C70.519,13.928 71.000,14.408 71.000,15.000 C71.000,15.592 70.519,16.071 69.924,16.071 L61.318,16.071 C60.724,16.071 60.242,15.592 60.242,15.000 C60.242,14.408 60.724,13.928 61.318,13.928 ZM61.318,28.928 L69.924,28.928 C70.519,28.928 71.000,29.407 71.000,29.999 C71.000,30.592 70.519,31.071 69.924,31.071 L61.318,31.071 C60.724,31.071 60.242,30.592 60.242,29.999 C60.242,29.407 60.724,28.928 61.318,28.928 ZM61.318,42.857 L69.924,42.857 C70.519,42.857 71.000,43.336 71.000,43.928 C71.000,44.520 70.519,45.000 69.924,45.000 L61.318,45.000 C60.724,45.000 60.242,44.520 60.242,43.928 C60.242,43.336 60.724,42.857 61.318,42.857 Z" />
+        </svg>
+    </nav>
+
     <section id="welcomePage" class="welcomePage">
-        <a "></a>
-        <div class=" container">
+        <div class="container">
             <header class="header">
                 <img src="assets/logo.svg" alt="logo">
 
-                <nav class="headerNav">
-                    <ul class="navList">
-                        <li class="navItem">
-                            <a href="#">Главная</a>
-                        </li>
 
-                        <li class="navItem">
-                            <a href="#">О нас</a>
-                        </li>
-
-                        <li class="navItem">
-                            <a href="./configure/configure.html">Конфигуратор</a>
-                        </li>
-
-                        <li class="navItem">
-                            <a href="#">Портфолио</a>
-                        </li>
-
-                        <li class="navItem no-margin">
-                            <a href="#">Услуги</a>
-                        </li>
-
-                        <li class="navItem gold">
-                            <a href="#">+8 812 345 55 16</a>
-                        </li>
-
-                        <li class="navItem gold">
-                            <a href="#">ITAC.STUDIO@GMAIL.COM</a>
-                        </li>
-                    </ul>
-
-                    <img class="burger" src="assets/burger.svg" alt="burger">
-                </nav>
             </header>
 
             <div class="main">
@@ -59,7 +65,7 @@
 
                 <p>Разрабатываем комплексное решение для реализаций потенциала вашего бизнеса</p>
 
-                <button id="btn">Решение</button>
+                <a href=".configure"><button id="btn">Решение</button></a>
 
             </div>
 
@@ -69,19 +75,31 @@
                     <div class="email">ITAC.STUDIO@GMAIL.COM</div>
                 </div>
 
-                <img class="arrow" src="assets/arrow.svg" alt="">
+                <a href="#aboutUs"><img class="arrow" src="assets/arrow.svg" alt=""></a>
 
                 <div class="socialMedia">
-                    <img src="assets/vk.svg" alt="">
-                    <img src="assets/fb.svg" alt="">
-                    <img src="assets/ig.svg" alt="">
-                    <img src="assets/shareIcon.svg" alt="">
+                    <img class="mediaItem" src="assets/vk.svg" alt="">
+                    <img class="mediaItem" src="assets/fb.svg" alt="">
+                    <img class="mediaItem" src="assets/ig.svg" alt="">
+                    <svg class=shareIcon xmlns="http://www.w3.org/2000/svg" width="28" height="32" viewBox="0 0 28 32">
+                        <defs>
+                            <style>
+                                .shareIconPath {
+                                    fill: #fff;
+                                    fill-rule: evenodd;
+                                }
+                            </style>
+                        </defs>
+                        <path id="share_icon" data-name="share icon" class="shareIconPath"
+                            d="M22.615,10.666 C21.075,10.666 19.695,10.018 18.714,8.991 L10.006,13.303 C10.479,14.097 10.769,15.011 10.769,15.999 C10.769,16.739 10.617,17.442 10.342,18.082 L18.073,23.825 C19.027,22.332 20.699,21.333 22.615,21.333 C25.589,21.333 28.000,23.721 28.000,26.666 C28.000,29.612 25.589,31.999 22.615,31.999 C19.641,31.999 17.231,29.612 17.231,26.666 C17.231,26.411 17.271,26.168 17.306,25.922 L9.113,19.836 C8.145,20.759 6.834,21.333 5.385,21.333 C2.411,21.333 -0.000,18.945 -0.000,15.999 C-0.000,13.054 2.411,10.666 5.385,10.666 C6.549,10.666 7.620,11.041 8.501,11.664 L17.578,7.168 C17.365,6.594 17.231,5.981 17.231,5.333 C17.231,2.388 19.641,-0.001 22.615,-0.001 C25.589,-0.001 28.000,2.388 28.000,5.333 C28.000,8.278 25.589,10.666 22.615,10.666 Z" />
+                    </svg>
+
                 </div>
             </div>
-            </div>
+        </div>
     </section>
 
-    <section class="aboutUs">
+    <section id="aboutUs" class="aboutUs">
         <div class="container">
             <h2 class="title">
                 О нас
@@ -96,6 +114,13 @@
                 placeat, quidem at quae qui nulla omnis. quidem at quae qui nulla omnis.
             </p>
         </div>
+
+        <div class="aboutUsBg">
+            <img class="slide showing" src="./assets/aboutUsBg.png" alt="">
+            <img class="slide" src="./assets/aboutUsBg1.png" alt="">
+            <img class="slide" src="./assets/aboutBg2.png" alt="">
+        </div>
+
     </section>
 
     <section class="team">
@@ -178,19 +203,86 @@
                 </ul>
             </div>
 
+            <div class="portfolioEx">
+                <div class="imgContainer">
+                    <img src="./assets/portfolioItem.jpg" alt="">
+                </div>
+            </div>
+
             <ul class="portfolioList">
-                <li class="portfolioItem"></li>
-                <li class="portfolioItem"></li>
-                <li class="portfolioItem"></li>
-                <li class="portfolioItem"></li>
-                <li class="portfolioItem"></li>
-                <li class="portfolioItem"></li>
-                <li class="portfolioItem"></li>
-                <li class="portfolioItem"></li>
-                <li class="portfolioItem"></li>
-                <li class="portfolioItem"></li>
-                <li class="portfolioItem"></li>
-                <li class="portfolioItem"></li>
+                <li class="portfolioItem clickable">
+                    <div class="portfolioExpand">
+                        <img src="./assets/magniGlass.svg" alt="">
+                        <p>Увеличить</p>
+                    </div>
+                </li>
+                <!--Ссылка на конфигуратор-->
+                <li class="portfolioItem">
+                    <a href=".configure">
+                        <h2><span>Разработай свой</span><br />Уникальный дизайн</h2>
+                        <img src="./assets/plus.svg" alt="">
+                    </a>
+                </li>
+                <li class="portfolioItem">
+                    <div class="portfolioExpand">
+                        <img src="./assets/magniGlass.svg" alt="">
+                        <p>Увеличить</p>
+                    </div>
+                </li>
+                <li class="portfolioItem">
+                    <div class="portfolioExpand">
+                        <img src="./assets/magniGlass.svg" alt="">
+                        <p>Увеличить</p>
+                    </div>
+                </li>
+                <li class="portfolioItem">
+                    <div class="portfolioExpand">
+                        <img src="./assets/magniGlass.svg" alt="">
+                        <p>Увеличить</p>
+                    </div>
+                </li>
+                <li class="portfolioItem">
+                    <div class="portfolioExpand">
+                        <img src="./assets/magniGlass.svg" alt="">
+                        <p>Увеличить</p>
+                    </div>
+                </li>
+                <li class="portfolioItem">
+                    <div class="portfolioExpand">
+                        <img src="./assets/magniGlass.svg" alt="">
+                        <p>Увеличить</p>
+                    </div>
+                </li>
+                <li class="portfolioItem">
+                    <div class="portfolioExpand">
+                        <img src="./assets/magniGlass.svg" alt="">
+                        <p>Увеличить</p>
+                    </div>
+                </li>
+                <li class="portfolioItem">
+                    <div class="portfolioExpand">
+                        <img src="./assets/magniGlass.svg" alt="">
+                        <p>Увеличить</p>
+                    </div>
+                </li>
+                <li class="portfolioItem">
+                    <div class="portfolioExpand">
+                        <img src="./assets/magniGlass.svg" alt="">
+                        <p>Увеличить</p>
+                    </div>
+                </li>
+                <li class="portfolioItem">
+                    <div class="portfolioExpand">
+                        <img src="./assets/magniGlass.svg" alt="">
+                        <p>Увеличить</p>
+                    </div>
+                </li>
+                <li class="portfolioItem">
+                    <div class="portfolioExpand">
+                        <img src="./assets/magniGlass.svg" alt="">
+                        <p>Увеличить</p>
+                    </div>
+                </li>
             </ul>
 
         </div>
@@ -202,58 +294,86 @@
 
             <ul class="stagesList">
                 <li class="stageItem">
-                    <p class="stageNum">1 этап</p>
+                    <img src="./assets/stageLine1.svg" alt="">
 
-                    <p class="stageTitle">Lorem ipsum dolor</p>
+                    <div class="stageText">
+                        <p class="stageNum">
+                            1 этап
+                        </p>
 
-                    <p class="stageDescr">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        <span>exercitation</span>
-                    </p>
+                        <p class="stageTitle">Lorem ipsum dolor</p>
+
+                        <p class="stageDescr">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            <span>exercitation</span>
+                        </p>
+                    </div>
                 </li>
 
                 <li class="stageItem">
-                    <p class="stageNum">2 этап</p>
+                    <img src="./assets/stageLine1.svg" alt="">
 
-                    <p class="stageTitle">Lorem ipsum dolor</p>
+                    <div class="stageText">
+                        <p class="stageNum">
+                            2 этап
+                        </p>
 
-                    <p class="stageDescr">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        <span>exercitation</span>
-                    </p>
+                        <p class="stageTitle">Lorem ipsum dolor</p>
+
+                        <p class="stageDescr">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            <span>exercitation</span>
+                        </p>
+                    </div>
                 </li>
 
                 <li class="stageItem">
-                    <p class="stageNum">3 этап</p>
+                    <img src="./assets/stageLine1.svg" alt="">
 
-                    <p class="stageTitle">Lorem ipsum dolor</p>
+                    <div class="stageText">
+                        <p class="stageNum">
+                            3 этап
+                        </p>
 
-                    <p class="stageDescr">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        <span>exercitation</span>
-                    </p>
+                        <p class="stageTitle">Lorem ipsum dolor</p>
+
+                        <p class="stageDescr">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            <span>exercitation</span>
+                        </p>
+                    </div>
                 </li>
 
                 <li class="stageItem">
-                    <p class="stageNum">4 этап</p>
+                    <img src="./assets/stageLine1.svg" alt="">
 
-                    <p class="stageTitle">Lorem ipsum dolor</p>
+                    <div class="stageText">
+                        <p class="stageNum">
+                            4 этап
+                        </p>
 
-                    <p class="stageDescr">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        <span>exercitation</span>
-                    </p>
+                        <p class="stageTitle">Lorem ipsum dolor</p>
+
+                        <p class="stageDescr">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            <span>exercitation</span>
+                        </p>
+                    </div>
                 </li>
 
                 <li class="stageItem">
-                    <p class="stageNum">5 этап</p>
+                    <div class="stageText">
+                        <p class="stageNum">
+                            5 этап
+                        </p>
 
-                    <p class="stageTitle">Lorem ipsum dolor</p>
+                        <p class="stageTitle">Lorem ipsum dolor</p>
 
-                    <p class="stageDescr">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        <span>exercitation</span>
-                    </p>
+                        <p class="stageDescr">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            <span>exercitation</span>
+                        </p>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -263,16 +383,44 @@
         <div class="container">
             <h2 class="title">Отзывы</h2>
 
-            <p class="reviewItem">
-                ТАКОЙ САЙТ ЗАПИЛИЛИ Я ПРОСТО В ШОКЕ НЕДЕЛЮ СМОТРЕТ В МАНИТОР, А ПРОДВИЖЕНИЕ ВАЩЕ ПУШКА ЗА НЕДЕЛЮ ПО
-                ОРАГНИКЕ
-                НА ПЕРВУЮ СТРОЧКУ ВЫВОДИТ ЕСЛИ НАЗВАНИЕ СВОЕЙ ФИРМЫ ЗАБИВАЮ.
-                КОРОЧЕ ВАУ ВСЕМ РЕКОМЕНДУЮ.
-            </p>
+            <ul class="reviewsList">
+                <li class="reviewItem reviewShow">
+                    <p class="reviewText">
+                        ТАКОЙ САЙТ ЗАПИЛИЛИ Я ПРОСТО В ШОКЕ НЕДЕЛЮ СМОТРЕТ В МАНИТОР, А ПРОДВИЖЕНИЕ ВАЩЕ ПУШКА ЗА НЕДЕЛЮ
+                        ПО
+                        ОРАГНИКЕ
+                        НА ПЕРВУЮ СТРОЧКУ ВЫВОДИТ ЕСЛИ НАЗВАНИЕ СВОЕЙ ФИРМЫ ЗАБИВАЮ.
+                        КОРОЧЕ ВАУ ВСЕМ РЕКОМЕНДУЮ.
+                    </p>
 
-            <p class="person">
-                Рулон Обоев, <span>Частный преприниматель.</span>
-            </p>
+                    <p class="person">
+                        Рулон Обоев, <span>Частный преприниматель.</span>
+                    </p>
+                </li>
+
+                <li class="reviewItem">
+                    <p class="reviewText">
+                        ВАСХИТИТЕНЬНО ПРЕКРАСНО УДИВИТЕЛЬНО, ВСЕГДА О ТАКОМ МЕЧТАЛА!
+                        ЕСЛИ ПОНАДОБИТСЯ ЕЩЕ САЙТ ТО ТОЛЬКО К ВАМ.
+                    </p>
+
+                    <p class="person">
+                        Головач Елена, <span>Человек с тяжелои судьбой.</span>
+                    </p>
+                </li>
+
+                <li class="reviewItem">
+                    <p class="reviewText">
+                        ВАСХИТИТЕНЬНО ПРЕКРАСНО УДИВИТЕЛЬНО, ВСЕГДА О ТАКОМ МЕЧТАЛА!
+                        ЕСЛИ ПОНАДОБИТСЯ ЕЩЕ САЙТ ТО ТОЛЬКО К ВАМ.
+                    </p>
+
+                    <p class="person">
+                        Ютуб Лайков, <span>Нарцисс</span>
+                    </p>
+                </li>
+            </ul>
+
         </div>
     </section>
 
@@ -284,7 +432,7 @@
 
             <ul class="optionsList">
                 <li class="option">
-                    <button>Сайт</button>
+                    <button class="siteBtn">Сайт</button>
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore.
@@ -292,7 +440,7 @@
                 </li>
 
                 <li class="option">
-                    <button>Продвижение</button>
+                    <button class="marketBtn">Продвижение</button>
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore.
@@ -300,7 +448,7 @@
                 </li>
 
                 <li class="option">
-                    <button>Поддержка</button>
+                    <button class="supportBtn">Поддержка</button>
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore.
@@ -308,7 +456,7 @@
                 </li>
             </ul>
 
-            <button class="begin">Начать</button>
+            <button class="beginBtn">Начать</button>
         </div>
     </section>
 
@@ -355,6 +503,7 @@
         </div>
     </footer>
 
+    <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

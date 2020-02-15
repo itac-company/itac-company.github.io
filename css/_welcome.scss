@@ -1,11 +1,17 @@
 .welcomePage {
-    padding-top: 35px;
-    padding-bottom: 70px;
     background-image: url(../assets/mainBg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 100vh;
+
+    .container {
+        height: 100vh;
+        padding-top: 35px;
+        padding-bottom: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
 
 .header {
@@ -16,37 +22,65 @@
 }
 
 .headerNav {
-    display: flex;
+    padding-left: calc((100vw - 1140px)/2 + 1120px - 697px);
+    z-index: 5;
     position: fixed;
-    right: 21vw;
+    top: 35px;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    transition: background-color .5s;
 }
 
-.burger {
-    margin-left: 80px;
+.headerNavBg {
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .navList {
     display: flex;
-    max-width: 530px;
+    max-width: 570px;
     flex-wrap: wrap;
     justify-content: flex-end;
     font-weight: 300;
     text-transform: uppercase;
-    overflow: hidden;
-    transform: translateX(2000px);
-    transition: transform .5s ease-in-out;
-}
-
-.navListOn {
-    transform: translateX(0);
+    transition: .5s ease-in-out;
+    margin-right: 50px;
+    overflow-x: hidden;
 }
 
 .navItem {
-    margin-right: 35px;
+    margin-right: 46px; 
+    text-align: center;
+    transform: translateX(900px);
+    transition: .3s;
 }
 
 .no-margin {
     margin-right: 0;
+}
+
+.navItem:hover {
+    color: $yellow;
+}
+
+@keyframes navItemAnim {
+    from {
+        transform: translateX(900px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes navItemAnimOut {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(900px);
+    }
 }
 
 .gold {
@@ -58,13 +92,14 @@
 }
 
 .main {
-    margin-top: 13vh;
+    margin-top: 30px;
 
     h1 {
-        font-size: 10vh;
+        font-size: 80px;
         text-transform: uppercase;
         line-height: 1.2;
-        font-family: Intro;
+        font-family: 'Russo One';
+        letter-spacing: 5px;
 
         span {
             color: $yellow;
@@ -72,9 +107,9 @@
     }
 
     p {
-        font-size: 2.5vh;
-        margin-top: 3vh;
-        margin-bottom: 7vh;
+        font-size: 20px;
+        margin-top: 30px;
+        margin-bottom: 45px;
         color: #d7d4d5;
     }
 
@@ -87,10 +122,10 @@
 }
 
 .mainFooter {
+    margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 11vh;
 }
 
 .contacts {
@@ -110,8 +145,50 @@
     }
 }
 
+.shareIcon {
+    cursor: pointer;
+    transition: .2s;
+}
+
+.shareIcon:hover {
+    transform: scale(1.2);
+}
+
+.mediaItem {
+    transition: .2s;
+    opacity: 0;
+}
+
+.mediaItem:hover {
+    transform: scale(1.2);
+}
+
+@keyframes mediaAnimIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes mediaAnimOut {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 .arrow {
-    margin-left: 38px;
+    margin: auto;
     animation: arrowAnim 1s alternate infinite;
 }
 
@@ -127,4 +204,8 @@
     100% {
         transform: translateY(0px);
     }
+}
+
+.shareIconPath {
+    transition: .2s;
 }

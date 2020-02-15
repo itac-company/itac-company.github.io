@@ -21,6 +21,7 @@ html {
 }
 
 body {
+    overflow-x: hidden;
     letter-spacing: 1px;
     scroll-behavior: smooth;
     min-width: 320px; /* body не адаптируется под ширину экрана менее 1000px */

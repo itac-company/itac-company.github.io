@@ -1,7 +1,7 @@
 .stages {
     padding: 114px 0 265px;
     text-align: center;
-    background: url(../assets/chooseBg.png) no-repeat center / cover;
+    background: url(../assets/mainBg.png) no-repeat center / cover;
 
     .stagesList {
         max-width: 980px;
@@ -9,19 +9,33 @@
         display: flex;
         justify-content: space-between;
         color: $white;
-        position: relative;
         line-height: 0.8;
 
         .stageItem {
             max-width: 170px;
             text-align: center;
+            position: relative;
+
+            img {
+                position: absolute;
+                top: 1%;
+                left: 85%;
+            }
+
+            .stageText {
+                transition: .3s;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
 
             .stageNum {
+                position: relative;
                 text-align: center;
                 color: $yellow;
                 font-family: Intro;
                 font-size: 20px;
-                position: relative;
             }
 
             .stageTitle {
@@ -37,19 +51,21 @@
                     color: #c3ff00;
                 }
             }
-        }
 
-        .stageItem:not(:last-child) {
-            .stageNum::after {
+            /*.stageNum::after {
                 width: 86px;
                 height: 5px;
                 position: absolute;
                 content: '';
-                background-image: url(../assets/stageLine1.svg);
+                
                 top: 50%;
                 transform: translateY(-50%);
                 left: 142px;
-            }
+            }*/
         }
+
+        
+            
+        
     }
 }
