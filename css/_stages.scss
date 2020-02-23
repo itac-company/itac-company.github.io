@@ -3,69 +3,59 @@
     text-align: center;
     background: url(../assets/mainBg.png) no-repeat center / cover;
 
-    .stagesList {
-        max-width: 980px;
-        margin: 138px auto 0;
-        display: flex;
-        justify-content: space-between;
-        color: $white;
-        line-height: 0.8;
+    .choosePath {
+        color: $yellow;
+        font-family: 'Russo One';
+        font-size: 20px;
+        text-transform: uppercase;
+        max-width: 234px;
+        margin: 0 auto;
+    }
 
-        .stageItem {
-            max-width: 170px;
-            text-align: center;
-            position: relative;
+    .pathDescr {
+        margin: 0 auto;
+        font-size: 16px;
+        max-width: 355px;
 
-            img {
-                position: absolute;
-                top: 1%;
-                left: 85%;
+        span {
+            color: #c3ff00;
+        }
+    }
+    
+    .sliderField {
+        svg {
+            &:hover .sliderBg {
+                opacity: 1;
             }
 
-            .stageText {
-                transition: .3s;
-
-                &:hover {
-                    transform: scale(1.2);
-                }
+            &:hover circle:not(.sliderSelector) {
+                fill: #c3ff00;
             }
 
-            .stageNum {
-                position: relative;
-                text-align: center;
-                color: $yellow;
-                font-family: Intro;
-                font-size: 20px;
+            &:hover .sliderSelector {
+                opacity: 1;
             }
-
-            .stageTitle {
-                font-size: 16px;
-                margin: 20px 0;
-            }
-
-            .stageDescr {
-                font-size: 14px;
-                line-height: 24px;
-
-                span {
-                    color: #c3ff00;
-                }
-            }
-
-            /*.stageNum::after {
-                width: 86px;
-                height: 5px;
-                position: absolute;
-                content: '';
-                
-                top: 50%;
-                transform: translateY(-50%);
-                left: 142px;
-            }*/
         }
 
-        
+        .sliderDots {
+            display: flex;
+            justify-content: space-between;
             
-        
+            circle {
+                transition: .3s;
+                
+                
+            }
+        }
+
+        .sliderBg {
+            opacity: 0;
+            transition: .3s;
+        }
+
+        .sliderSelector {
+            cursor: pointer;
+            opacity: 0;
+        }
     }
 }

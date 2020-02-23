@@ -17,23 +17,23 @@
     <nav class="headerNav clearfix">
         <ul class="navList">
             <li class="navItem">
-                <a href=".welcomePage">Главная</a>
+                <a class="navLink" href=".welcomePage">Главная</a>
             </li>
 
             <li class="navItem">
-                <a href=".aboutUs">О нас</a>
+                <a class="navLink" href=".aboutUs">О нас</a>
             </li>
 
             <li class="navItem">
-                <a href="./configure/configure.html">Конфигуратор</a>
+                <a class="navLink" href="./configure/configure.html">Конфигуратор</a>
             </li>
 
             <li class="navItem">
-                <a href=".portfolio">Портфолио</a>
+                <a class="navLink" href=".portfolio">Портфолио</a>
             </li>
 
             <li class="navItem no-margin">
-                <a href=".configure">Услуги</a>
+                <a class="navLink" href=".configure">Услуги</a>
             </li>
 
             <li class="navItem gold">
@@ -55,7 +55,9 @@
     <section id="welcomePage" class="welcomePage">
         <div class="container">
             <header class="header">
-                <img src="assets/logo.svg" alt="logo">
+                <a class="navLink" href=".welcomePage">
+                    <img src="assets/logo.svg" alt="logo" class="navLink">
+                </a>
 
 
             </header>
@@ -65,17 +67,17 @@
 
                 <p>Разрабатываем комплексное решение для реализаций потенциала вашего бизнеса</p>
 
-                <a href=".configure"><button id="btn">Решение</button></a>
+                <a class="navLink" href=".configure">Решение</a>
 
             </div>
 
             <div class="mainFooter">
                 <div class="contacts">
-                    <div class="tel">+8 812 345 55 16</div>
-                    <div class="email">ITAC.STUDIO@GMAIL.COM</div>
+                    <div class="tel"><a href="tel:88123455516">+8 812 345 55 16</a></div>
+                    <div class="email"><a href="mailto:itac_studio@gmail.com">ITAC.STUDIO@GMAIL.COM</a></div>
                 </div>
 
-                <a href="#aboutUs"><img class="arrow" src="assets/arrow.svg" alt=""></a>
+                <a href="#aboutUs"><img class="navLink" class="arrow" src="assets/arrow.svg" alt=""></a>
 
                 <div class="socialMedia">
                     <img class="mediaItem" src="assets/vk.svg" alt="">
@@ -288,96 +290,53 @@
         </div>
     </section>
 
-    <div class="stages">
+    <!--<div class="stages">
         <div class="container">
             <h2 class="title">Путь клиента</h2>
 
-            <ul class="stagesList">
-                <li class="stageItem">
-                    <img src="./assets/stageLine1.svg" alt="">
+            <p class="choosePath">
+                Выбери свой путь работы с нами
+            </p>
 
-                    <div class="stageText">
-                        <p class="stageNum">
-                            1 этап
-                        </p>
+            <p class="pathDescr">
+                Путь каждого нашего клиента уникален. Выбери, какой из нижепредложенных путей тебе больше всего
+                интересен и узнай, какие <span>подарки</span> тебя ждут.
+            </p>
 
-                        <p class="stageTitle">Lorem ipsum dolor</p>
+            <ul class="slidersList">
+                <li class="sliderItem">
+                    <h3 class="sliderTitle">Концепция</h3>
 
-                        <p class="stageDescr">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            <span>exercitation</span>
-                        </p>
+                    <div class="sliderField">
+                        <svg width="408px" height="100px">
+                            <g class="sliderDots">
+                                <circle fill="white" id="knob" class="sliderDots" cx="10" cy="9.5" r="9.5" />
+                                <circle fill="white" id="knob" class="sliderDots" cx="57" cy="9.5" r="9.5" />
+                                <circle fill="white" id="knob" class="sliderDots" cx="104" cy="9.5" r="9.5" />
+                                <circle fill="white" id="knob" class="sliderDots" cx="150" cy="9.5" r="9.5" />
+                                <circle fill="white" id="knob" class="sliderDots" cx="197" cy="9.5" r="9.5" />
+                                <circle fill="white" id="knob" class="sliderDots" cx="244" cy="9.5" r="9.5" />
+                                <circle fill="white" id="knob" class="sliderDots" cx="290" cy="9.5" r="9.5" />
+                                <circle fill="red" id="knob" class="sliderSelector" cx="10" cy="9.5" r="14" />
+                            </g>
+                            <image id="bg" class="sliderBg" width="408" height="2"
+                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZgAAAACCAYAAABlscrEAAAAT0lEQVRIie3VwQmDUBBF0aOIIWJJ9l+RGBLEL8IUoOu8A7eAmc3rWmsLZrwxYcQLQ9VXl05ERPyzVrcf1V598cOGD9b+wZMyLhERcW8LcAI50Q0/8fCxZQAAAABJRU5ErkJggg==" />
+                        </svg>
                     </div>
                 </li>
+                <li class="sliderItem">
+                    <h3 class="sliderTitle">Создание</h3>
 
-                <li class="stageItem">
-                    <img src="./assets/stageLine1.svg" alt="">
-
-                    <div class="stageText">
-                        <p class="stageNum">
-                            2 этап
-                        </p>
-
-                        <p class="stageTitle">Lorem ipsum dolor</p>
-
-                        <p class="stageDescr">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            <span>exercitation</span>
-                        </p>
-                    </div>
+                    <div class="sliderField"></div>
                 </li>
+                <li class="sliderItem">
+                    <h3 class="sliderTitle">Выпуск</h3>
 
-                <li class="stageItem">
-                    <img src="./assets/stageLine1.svg" alt="">
-
-                    <div class="stageText">
-                        <p class="stageNum">
-                            3 этап
-                        </p>
-
-                        <p class="stageTitle">Lorem ipsum dolor</p>
-
-                        <p class="stageDescr">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            <span>exercitation</span>
-                        </p>
-                    </div>
-                </li>
-
-                <li class="stageItem">
-                    <img src="./assets/stageLine1.svg" alt="">
-
-                    <div class="stageText">
-                        <p class="stageNum">
-                            4 этап
-                        </p>
-
-                        <p class="stageTitle">Lorem ipsum dolor</p>
-
-                        <p class="stageDescr">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            <span>exercitation</span>
-                        </p>
-                    </div>
-                </li>
-
-                <li class="stageItem">
-                    <div class="stageText">
-                        <p class="stageNum">
-                            5 этап
-                        </p>
-
-                        <p class="stageTitle">Lorem ipsum dolor</p>
-
-                        <p class="stageDescr">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            <span>exercitation</span>
-                        </p>
-                    </div>
+                    <div class="sliderField"></div>
                 </li>
             </ul>
         </div>
-    </div>
+    </div> -->
 
     <section class="reviews">
         <div class="container">
@@ -432,7 +391,7 @@
 
             <ul class="optionsList">
                 <li class="option">
-                    <button class="siteBtn">Сайт</button>
+                    <a href=".configure"><button class="siteBtn">Сайт</button></a>
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore.
@@ -440,7 +399,7 @@
                 </li>
 
                 <li class="option">
-                    <button class="marketBtn">Продвижение</button>
+                    <a href=".configure"><button class="marketBtn">Продвижение</button></a>
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore.
@@ -448,7 +407,7 @@
                 </li>
 
                 <li class="option">
-                    <button class="supportBtn">Поддержка</button>
+                    <a href=".configure"><button class="supportBtn">Поддержка</button></a>
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore.
@@ -484,22 +443,28 @@
 
     <footer class="footer">
         <div class="container footerContainer">
-            <img src="./assets/logo.svg" alt="" class="logo">
+            <div class="leftSide">
+                <a href=".welcomePage">
+                    <img src="./assets/logo.svg" alt="logo" class="navLink">
+                </a>
 
-            <p class="copyright">Все права защищены 2020 ИТАК</p>
+                <div class="socialMedia">
+                    <img class="mediaItem" src="assets/vk.svg" alt="">
+                    <img class="mediaItem" src="assets/fb.svg" alt="">
+                    <img class="mediaItem" src="assets/ig.svg" alt="">
+                </div>
+            </div>
 
-            <a href="#welcomePage" class="goUpBtn">Наверх</a>
+
+            <a href="#welcomePage" class="goUpBtn navLink">Наверх</a>
 
             <div class="footerContacts">
-                <div class="tel">+7 (812) 345 55 16</div>
-                <div class="email">ITAC.STUDIO@GMAIL.COM</div>
+                <div class="tel"><a href="tel:88123455516">+8 812 345 55 16</a></div>
+                <div class="email"><a href="mailto:itac_studio@gmail.com">ITAC.STUDIO@GMAIL.COM</a></div>
+                <p class="copyright">Все права защищены, &copy; 2020 ИТАК</p>
             </div>
 
-            <div class="socialMedia">
-                <img src="assets/vk.svg" alt="">
-                <img src="assets/fb.svg" alt="">
-                <img src="assets/ig.svg" alt="">
-            </div>
+
         </div>
     </footer>
 

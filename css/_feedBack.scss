@@ -67,15 +67,29 @@
     padding: 15px 0;
     background-color: #222222;
 
+    .mediaItem {
+        opacity: 1;
+    }
+
     .footerContainer {
         display: flex;
         align-items: center;
         justify-content: space-between;
     
+        .leftSide {
+            display: flex;
+            justify-content: space-between;
+            width: 271px;
+        }
+        
         .goUpBtn {
             text-transform: uppercase;
             font-size: 20px;
-            margin: 0 60px 0 170px;
+            transition: .2s;
+
+            &:hover {
+                color: $yellow;
+            }
         }
     
         .copyright {
@@ -83,11 +97,12 @@
             color: #b2b2b2;
             text-transform: uppercase;
             font-size: 12px;
-            margin-left: 20px;
         }
 
         .footerContacts {
             display: flex;
+            flex-wrap: wrap;
+            max-width: 271px;
             color: $yellow;
             font-size: 12px;
 

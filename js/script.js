@@ -55,33 +55,23 @@ portfolioEx.addEventListener('click', () => {
     portfolioEx.style.display = 'none';
 })
 
-
-/*$(document).ready(function () {
-    $('a[href^="#"]').click(function () {
-        elementClick = $(this).attr("href");
-        destination = $(elementClick).offset().top;
-        if ($.browser.safari) {
-            $('body').animate({ scrollTop: destination }, 1100);
-        } else {
-            $('html').animate({ scrollTop: destination }, 1100);
-        }
-        return false;
-    });
-});*/
-
 $(document).ready(function () {
     $("body").on("click", "a", function (event) {
         //отменяем стандартную обработку нажатия по ссылке
         event.preventDefault();
 
-        //забираем идентификатор бока с атрибута href
-        var id = $(this).attr('href'),
+        if (event.target.classList.contains('navLink')) {
+            //забираем идентификатор бока с атрибута href
+            var id = $(this).attr('href'),
 
-            //узнаем высоту от начала страницы до блока на который ссылается якорь
-            top = $(id).offset().top;
+                //узнаем высоту от начала страницы до блока на который ссылается якорь
+                top = $(id).offset().top;
 
-        //анимируем переход на расстояние - top за 1500 мс
-        $('body,html').animate({ scrollTop: top }, 600);
+            //анимируем переход на расстояние - top за 1500 мс
+            $('body,html').animate({ scrollTop: top }, 600)
+        } else {
+
+        }
     });
 });
 
@@ -99,27 +89,6 @@ const carousel = () => {
 
 
 abousUsBg.addEventListener('click', () => {
-    /*firstImg.style.transform = 'scaleX(0)';
-    secondImg.style.transform = 'scaleX(1)';
-    secondImg.style.transformOrigin = 'left';
-    setTimeout(() => {
-        secondImg.style.transform = 'scaleX(0)';
-        thirdImg.style.transform = 'scaleX(1)';
-        firstImg.style.transform = 'scaleX(1)';
-        firstImg.style.transformOrigin = 'right';
-        firstImg.style.transform = 'scaleX(0)';
-        thirdImg.style.transformOrigin = 'left';
-    }, 3000);
-    setTimeout(() => {
-        thirdImg.style.transform = 'scaleX(0)';
-        firstImg.style.transform = 'scaleX(1)';
-        firstImg.style.transformOrigin = 'left';
-        secondImg.style.zIndex = '-1';
-        secondImg.style.transform = 'scaleX(1)';
-        secondImg.style.transformOrigin = 'right';
-        secondImg.style.transform = 'scaleX(0)';
-        secondImg.style.zIndex = '1';
-    }, 6000);*/
     secondImg.style.opacity = '1';
     firstImg.style.transform = 'translateX(-725px)';
     secondImg.style.transform = 'translateX(-725px)';
@@ -219,3 +188,19 @@ siteBtn.addEventListener('click', () => {
 beginBtn.addEventListener('click', () => {
     alert('Мудрое решение!');
 });
+
+const sliderSelector = document.querySelector('.sliderSelector');
+const sliderDots = document.querySelectorAll('.sliderDots');
+let cx;
+
+sliderDots.forEach(item => {
+    item.addEventListener('click', () => {
+        cx = item.getAttribute('cx');
+        if (cx != null) {
+            attr = cx;
+        } else {
+            console.log(1)
+        }
+        sliderSelector.setAttribute('cx', attr)
+    })
+})
