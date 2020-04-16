@@ -14,61 +14,64 @@
 </head>
 
 <body>
-    <nav class="headerNav clearfix">
-        <ul class="navList">
-            <li class="navItem">
-                <a class="navLink" href=".welcomePage">Главная</a>
-            </li>
-
-            <li class="navItem">
-                <a class="navLink" href=".aboutUs">О нас</a>
-            </li>
-
-            <li class="navItem">
-                <a class="navLink" href="./configure/configure.html">Конфигуратор</a>
-            </li>
-
-            <li class="navItem">
-                <a class="navLink" href=".portfolio">Портфолио</a>
-            </li>
-
-            <li class="navItem no-margin">
-                <a class="navLink" href=".configure">Услуги</a>
-            </li>
-
-            <li class="navItem gold">
-                <a href="#">+8 812 345 55 16</a>
-            </li>
-
-            <li class="navItem gold">
-                <a href="#">ITAC.STUDIO@GMAIL.COM</a>
-            </li>
-        </ul>
-
-        <svg class="burger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="71px"
-            height="45px">
-            <path fill-rule="evenodd" fill="rgb(255, 255, 253)"
-                d="M-0.000,1.071 C-0.000,1.664 0.481,2.143 1.076,2.143 L53.788,2.143 C54.382,2.143 54.864,1.664 54.864,1.071 C54.864,0.479 54.382,-0.000 53.788,-0.000 L1.076,-0.000 C0.481,-0.000 -0.000,0.479 -0.000,1.071 ZM1.076,13.928 L53.788,13.928 C54.382,13.928 54.864,14.408 54.864,15.000 C54.864,15.592 54.382,16.071 53.788,16.071 L1.076,16.071 C0.481,16.071 -0.000,15.592 -0.000,15.000 C-0.000,14.408 0.481,13.928 1.076,13.928 ZM1.076,28.928 L53.788,28.928 C54.382,28.928 54.864,29.407 54.864,29.999 C54.864,30.592 54.382,31.071 53.788,31.071 L1.076,31.071 C0.481,31.071 -0.000,30.592 -0.000,29.999 C-0.000,29.407 0.481,28.928 1.076,28.928 ZM1.076,42.857 L53.788,42.857 C54.382,42.857 54.864,43.336 54.864,43.928 C54.864,44.520 54.382,45.000 53.788,45.000 L1.076,45.000 C0.481,45.000 -0.000,44.520 -0.000,43.928 C-0.000,43.336 0.481,42.857 1.076,42.857 ZM61.318,-0.000 L69.924,-0.000 C70.519,-0.000 71.000,0.479 71.000,1.071 C71.000,1.664 70.519,2.143 69.924,2.143 L61.318,2.143 C60.724,2.143 60.242,1.664 60.242,1.071 C60.242,0.479 60.724,-0.000 61.318,-0.000 ZM61.318,13.928 L69.924,13.928 C70.519,13.928 71.000,14.408 71.000,15.000 C71.000,15.592 70.519,16.071 69.924,16.071 L61.318,16.071 C60.724,16.071 60.242,15.592 60.242,15.000 C60.242,14.408 60.724,13.928 61.318,13.928 ZM61.318,28.928 L69.924,28.928 C70.519,28.928 71.000,29.407 71.000,29.999 C71.000,30.592 70.519,31.071 69.924,31.071 L61.318,31.071 C60.724,31.071 60.242,30.592 60.242,29.999 C60.242,29.407 60.724,28.928 61.318,28.928 ZM61.318,42.857 L69.924,42.857 C70.519,42.857 71.000,43.336 71.000,43.928 C71.000,44.520 70.519,45.000 69.924,45.000 L61.318,45.000 C60.724,45.000 60.242,44.520 60.242,43.928 C60.242,43.336 60.724,42.857 61.318,42.857 Z" />
-        </svg>
-    </nav>
-
     <section id="welcomePage" class="welcomePage">
         <div class="container">
             <header class="header">
-                <a class="navLink" href=".welcomePage">
+                <a class="logo navLink" href=".welcomePage">
                     <img src="assets/logo.svg" alt="logo" class="navLink">
                 </a>
 
+                <nav class="headerNav clearfix">
+                    <ul class="navList">
+                        <li class="navItem">
+                            <a class="navLink" href=".welcomePage">Главная</a>
+                        </li>
 
+                        <li class="navItem">
+                            <a class="navLink" href=".aboutUs">О нас</a>
+                        </li>
+
+                        <li class="navItem">
+                            <a href="./configure/configure.html">Галерея</a>
+                        </li>
+
+                        <li class="navItem">
+                            <a href="./configure/configure.html">Конфигуратор</a>
+                        </li>
+
+                        <li class="navItem">
+                            <a class="navLink" href=".portfolio">Блог</a>
+                        </li>
+
+                        <li class="navItem no-margin">
+                            <a class="navLink" href=".configure">Связаться</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <svg class="burger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="51px" height="35px">
+                    <defs>
+                        <filter id="Filter_0">
+                            <feFlood flood-color="rgb(255, 255, 255)" flood-opacity="1" result="floodOut" />
+                            <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+                            <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+                        </filter>
+
+                    </defs>
+                    <g filter="url(#Filter_0)">
+                        <path class="burgerIcon" fill-rule="evenodd" fill="rgb(255, 255, 253)"
+                            d="M2.000,0.737 C2.000,1.146 2.332,1.476 2.742,1.476 L39.121,1.476 C39.531,1.476 39.863,1.146 39.863,0.737 C39.863,0.330 39.531,-0.000 39.121,-0.000 L2.742,-0.000 C2.332,-0.000 2.000,0.330 2.000,0.737 ZM2.742,9.595 L39.121,9.595 C39.531,9.595 39.863,9.925 39.863,10.333 C39.863,10.741 39.531,11.071 39.121,11.071 L2.742,11.071 C2.332,11.071 2.000,10.741 2.000,10.333 C2.000,9.925 2.332,9.595 2.742,9.595 ZM2.742,19.928 L39.121,19.928 C39.531,19.928 39.863,20.258 39.863,20.666 C39.863,21.074 39.531,21.404 39.121,21.404 L2.742,21.404 C2.332,21.404 2.000,21.074 2.000,20.666 C2.000,20.258 2.332,19.928 2.742,19.928 ZM2.742,29.523 L39.121,29.523 C39.531,29.523 39.863,29.853 39.863,30.262 C39.863,30.669 39.531,31.000 39.121,31.000 L2.742,31.000 C2.332,31.000 2.000,30.669 2.000,30.262 C2.000,29.853 2.332,29.523 2.742,29.523 ZM44.318,-0.000 L50.257,-0.000 C50.668,-0.000 51.000,0.330 51.000,0.737 C51.000,1.146 50.668,1.476 50.257,1.476 L44.318,1.476 C43.908,1.476 43.576,1.146 43.576,0.737 C43.576,0.330 43.908,-0.000 44.318,-0.000 ZM44.318,9.595 L50.257,9.595 C50.668,9.595 51.000,9.925 51.000,10.333 C51.000,10.741 50.668,11.071 50.257,11.071 L44.318,11.071 C43.908,11.071 43.576,10.741 43.576,10.333 C43.576,9.925 43.908,9.595 44.318,9.595 ZM44.318,19.928 L50.257,19.928 C50.668,19.928 51.000,20.258 51.000,20.666 C51.000,21.074 50.668,21.404 50.257,21.404 L44.318,21.404 C43.908,21.404 43.576,21.074 43.576,20.666 C43.576,20.258 43.908,19.928 44.318,19.928 ZM44.318,29.523 L50.257,29.523 C50.668,29.523 51.000,29.853 51.000,30.262 C51.000,30.669 50.668,31.000 50.257,31.000 L44.318,31.000 C43.908,31.000 43.576,30.669 43.576,30.262 C43.576,29.853 43.908,29.523 44.318,29.523 Z" />
+                    </g>
+                    <image class="crossIcon" x="0px" y="0px" width="34px" height="35px"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAiCAQAAAB7eXhKAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkAhkWCyo2NHeeAAAD7klEQVRIx5WV3U9bdRzGn3LOaVcYI2yRLTpeamaMNyaObIkxJvoHeONWs5VFpwJZDXMjJrsyMpE4ZEB5CVws8cYLhWLchTdjUKDMF3ajw40aNMZFBaTQlp6eHs6vQB8vDu1a2g78Xp7kfPJ7ft/zfA4AgA56eIVFyDMEUWjYxAE+C1hQHPuSmwyyPh+kIEL5u35riUmOAMV4fnJIREiGeIGWPSLkQLMIk5tRrRuogNPed31MaCSDfGtPCPm+Ww+T6+LmFycqgUN4Dd2St8NnqCSDbMiOk4uoVebe10OkJvr9+514ArDBgTfQC2/rLWONZIiNmZCdiFol0GxESVV0TO47h2OwAYCCajjhwVDHmIiRXOI7BRHyXFN8hdQ3+v3SWThgTd8uKnEKHsXbPm5ESS6zgUou4qJt7mI8RGqib6rchZpHAACQUYnT6JG8baN6hORKajsZCDnQrEdIVXRNldShGkrOnlNxro8JleQq38xCyLNuI0LGE/3TOIOns0/wCFKFU+i2jXROiBjJRZ5PI+QH72krpJ4YvHPo3M4I2XGq4EQvvG2jeohkiG5KhNM6/4ERIVWja8p6FjW5EXLj9GCo/bbQtuPI9xr1CLm+0eO31hWKkCeO4u2aECqZfLj6ubpgRjjgylxjaqQcRBJxqGDyoE+WgsdLbU8Vv2ArXdFvzHx0Q/0BC9jYHQEksY4Ytlg2JZ2wPncEFsD/69t9YiYfAMjrCGxgEXfx/ZWy2mdgAYCXK36ueGURid1uIWuO2v0taowMGt88DIfJZIju/FIquN65JmON1BIfzuJmy6hQSYb57v8A3Hdry6SeGPyuuBW9ylfdPhEjuZDrk7xzdd98sxEh14zOSbsLJ+GEB96223qY5CrdVHYjKIHLRpiMJ9onJBccKEYVnOjBcOut7e40Pvb9WuWXpniIjIsBv/0MHLDCkvrYioY6TbMt8XzBi3VaA5f0MBkTvf7DLrPOBAEZR/E6PLav233GGskg6ynnvcTAZWONVIXHj3SZUk3dLuDwtVHDtH1DHsCsOx4i9Y2B6ZKMMqV9se0TabhzXMRILps+yTqBHiE10T99oA41sMKyA2EW8DQ8kvczU48rbEz/d2qVwCUjSsYTXVOSC45MH2TpNx3nk1EjSjLMRkoAIP/VZkYYvGN37fTBDoNvxyka6vQJjeQyWwAF1fPTpJboTUXAYxBp20sjn44bUXLzWwnlOB44crDs3p/Ng1oeH1wF8HHmgyR0xECWT0qV+v4/Hlyz4DBexUtI4i5m8M8e66zgSZzEi7DhR/hM5ej4HT/tGWCeRIWOf/Ebliwogh0l2IIGsUeAOVaUQoIO/T85jWlVRo/TRAAAAABJRU5ErkJggg==" />
+                </svg>
             </header>
 
             <div class="main">
-                <h1><span>Итак<br /></span> нужно <span> решение<br /></span>для <span>сайта</span></h1>
+                <h1>Нечто большее, чем<br /> просто <br /> <span> рюкзак<br /></span></h1>
 
-                <p>Разрабатываем комплексное решение для реализаций потенциала вашего бизнеса</p>
-
-                <a class="navLink" href=".configure">Решение</a>
-
+                <p>Для всех возрастов. Всегда с собой. Только то, что нужно. Всегда под рукой</p>
             </div>
 
             <div class="mainFooter">
@@ -77,26 +80,7 @@
                     <div class="email"><a href="mailto:itac_studio@gmail.com">ITAC.STUDIO@GMAIL.COM</a></div>
                 </div>
 
-                <a href="#aboutUs"><img class="navLink" class="arrow" src="assets/arrow.svg" alt=""></a>
-
-                <div class="socialMedia">
-                    <img class="mediaItem" src="assets/vk.svg" alt="">
-                    <img class="mediaItem" src="assets/fb.svg" alt="">
-                    <img class="mediaItem" src="assets/ig.svg" alt="">
-                    <svg class=shareIcon xmlns="http://www.w3.org/2000/svg" width="28" height="32" viewBox="0 0 28 32">
-                        <defs>
-                            <style>
-                                .shareIconPath {
-                                    fill: #fff;
-                                    fill-rule: evenodd;
-                                }
-                            </style>
-                        </defs>
-                        <path id="share_icon" data-name="share icon" class="shareIconPath"
-                            d="M22.615,10.666 C21.075,10.666 19.695,10.018 18.714,8.991 L10.006,13.303 C10.479,14.097 10.769,15.011 10.769,15.999 C10.769,16.739 10.617,17.442 10.342,18.082 L18.073,23.825 C19.027,22.332 20.699,21.333 22.615,21.333 C25.589,21.333 28.000,23.721 28.000,26.666 C28.000,29.612 25.589,31.999 22.615,31.999 C19.641,31.999 17.231,29.612 17.231,26.666 C17.231,26.411 17.271,26.168 17.306,25.922 L9.113,19.836 C8.145,20.759 6.834,21.333 5.385,21.333 C2.411,21.333 -0.000,18.945 -0.000,15.999 C-0.000,13.054 2.411,10.666 5.385,10.666 C6.549,10.666 7.620,11.041 8.501,11.664 L17.578,7.168 C17.365,6.594 17.231,5.981 17.231,5.333 C17.231,2.388 19.641,-0.001 22.615,-0.001 C25.589,-0.001 28.000,2.388 28.000,5.333 C28.000,8.278 25.589,10.666 22.615,10.666 Z" />
-                    </svg>
-
-                </div>
+                <a href="#aboutUs"><img class="navLink arrow" src="assets/arrow.svg" alt=""></a>
             </div>
         </div>
     </section>
@@ -104,370 +88,281 @@
     <section id="aboutUs" class="aboutUs">
         <div class="container">
             <h2 class="title">
-                О нас
+                Ситуация на рынке онлайн образования
             </h2>
 
-            <p class="sectionDescr">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto delectus labore beatae alias quas ipsum,
-                eveniet voluptate a nihil explicabo veritatis amet praesentium, accusantium tempora fugiat. Labore atque
-                fugit, praesentium sit voluptatum necessitatibus quo sed incidunt, mollitia doloremque ea officia
-                magnam. Sequi nemo ut explicabo voluptatum, magni tempore accusamus officia illum perferendis quo
-                asperiores natus saepe nihil amet tenetur sapiente quasi magnam animi, maxime fugit numquam? Iusto sint
-                placeat, quidem at quae qui nulla omnis. quidem at quae qui nulla omnis.
-            </p>
-        </div>
+            <h3>
+                Россия
+            </h3>
 
-        <div class="aboutUsBg">
-            <img class="slide showing" src="./assets/aboutUsBg.png" alt="">
-            <img class="slide" src="./assets/aboutUsBg1.png" alt="">
-            <img class="slide" src="./assets/aboutBg2.png" alt="">
+            <div class="sectionDescr">
+                <p>20-25%</p>
+                Составляет<br /> рост рынка в год
+            </div>
+
+            <ul class="yearStat">
+                <li>
+                    <p class="year">
+                        2018
+                    </p>
+
+                    <p class="stats">
+                        Объем рынка дистанционного обучения в России составлял примерно 28,9 млрд. руб.
+                    </p>
+                </li>
+
+                <li>
+                    <p class="year">
+                        2020
+                    </p>
+
+                    <p class="stats">
+                        Российский рынок онлайн-образования достиг 45–50 млрд рублей
+                    </p>
+                </li>
+
+                <li>
+                    <p class="year">
+                        2019
+                    </p>
+
+                    <p class="stats">
+                        Рынок онлайн-образования в России может вырасти до 55–60 млрд рублей, говорится в отчёте.
+                    </p>
+                </li>
+        </div>
+        </div>
+    </section>
+
+    <section class="problem">
+        <div class="container">
+            <div class="title">
+                Проблематика
+            </div>
+
+            <img class="problemImg" src="./assets/problemImg.png" alt="problem">
+
+            <ul>
+                <li>
+                    <p class="problemTitle">
+                        41%
+                    </p>
+
+                    <p class="problemDescr">
+                        Работающих выпускников высших учебных заведений выбирают работу не по специальности.
+                        Объясняется это не достаточной осведомлённостью о выгодах и нюансах профессий ещё на стадии
+                        обучения
+                        в школе, а так же не достаточным пониманием того, что из себя представляют будущие
+                        специальности.
+                    </p>
+                </li>
+
+                <li>
+                    <p class="problemTitle">
+                        33-е, 34-е и 35-е место
+                    </p>
+
+                    <p class="problemDescr">
+                        Из 50. Такие показатели у России согласно масштабных исследований по индексу уровня образования
+                        в
+                        странах мира, эффективности национальных систем образования и рейтингу национальных систем
+                        образования. Что свидетельствует о низком уровне развития национальных образовательных систем и
+                        как
+                        следствие низком уровне подготовки выпускаемых специалистов.
+                    </p>
+                </li>
+            </ul>
+
+            <div class="title secondTitle">
+                Решение, которое мы предлагаем
+            </div>
+
+            <img class="problemImg2" src="./assets/problemBg2.png" alt="problem">
+
+            <ul>
+                <li>
+                    <p class="problemDescr">
+                        Мы создаём аналитическую платформу РЮКЗАК, которая позволит обучающимся сделать выбор будущей
+                        профессии более осознанным.
+                    </p>
+                </li>
+
+                <li>
+                    <p class="problemDescr">
+                        А так же поможет им в сфере профильной подготовки к работе, путём анализа интересов и подбора на
+                        их основе необходимой обучающей литературы / порталов и других полезных инструментов.
+                    </p>
+                </li>
+            </ul>
         </div>
 
     </section>
 
-    <section class="team">
+    <section class="about">
         <div class="container">
-            <h2 class="title">Наша команда</h2>
+            <div class="title">
+                Что такое рюкзак
+            </div>
 
-            <ul class="teamList">
-                <li class="teamMember">
-                    <h3 class="name">Сергей Сафронов</h3>
+            <img src="./assets/aboutBg.png" alt="woman" class="aboutImg">
 
-                    <p class="prof">Продвижение</p>
+            <ul>
+                <li>Наша разработка это приложение, которое работает на базе машинного обучения анализирует интересы
+                    учащегося на основе оценки материала, представляемого его образовательной организацией.</li>
+                <li>Не только помогает ученику правильно выбрать вектор профессионального движения, а так же является
+                    его
+                    постоянным спутником в подборе информации, соответствующей выбранному профилю.
+                </li>
+                <li>Все мы не раз сталкивались с проблемой, что нам необходимо решить какую-то задачу, но информацию по
+                    ней
+                    найти не получается или же эта информация разбросана по множеству источников и на её
+                    структурирование
+                    уйдут недели. Наша платформа проведёт необходимый сбор информации по ключевым словам и предоставит
+                    ее
+                    пользователю, что позволит ему значительно ускориться в обучении и даст возможность сформировать
+                    интерес
+                    к будущей или действующей профессии.
+                </li>
+            </ul>
+        </div>
 
-                    <p class="memberDescr">Пссс парень СЕО продвижение надо.
-                        Черный пояс по яндекс директ.
-                        В совершенсвте владеет Google Adwords.</p>
+    </section>
+
+    <section class="pros">
+        <div class="container">
+            <div class="howItWorks">
+                <div class="title">
+                    Как рюкзак работает
+                </div>
+
+                <ul>
+                    <li>Ученики образовательных учреждений оценивают тематики, которые были обозначены на уроке по
+                        уровню
+                        интереса лично для себя, чтобы система могла собирать данные и через необходимое время помогала
+                        подобрать образовательные ресурсы для самостоятельного изучения в подготовке к ЕГЭ / сделать
+                        выбор
+                        будущей профессии более осознанным.</li>
+                    <li>В дальнейшем система может подсказать на изучение каких предметов необходимо делать упор, а
+                        какие
+                        для конкретного ученика на данном этапе его обучения не актуальны.</li>
+                    <li>Система синхронизируется с образовательной программой учреждения и после урока / лекции /
+                        семинара /
+                        практики, показывает на экране, какие тематики были затронуты на занятии и предлагает учащемуся
+                        выбрать элементы, которые понравились / не понравились, выстраивает интеллектуальный рейтинг
+                        дисциплин.
+                    </li>
+                </ul>
+
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="audience">
+        <div class="container">
+            <div class="title">
+                Целевая аудитория
+            </div>
+
+            <ul>
+                <li>
+                    <img src="./assets/schools.png" alt="school">
+                    <p>Частные школы</p>
                 </li>
 
-                <li class="teamMember">
-                    <h3 class="name">Богдан Климов</h3>
-
-                    <p class="prof">Фронтенд</p>
-
-                    <p class="memberDescr">Я твой сайт главный страница верстал.
-                        Верстаю как хочу законом
-                        не запрещено.</p>
-                </li>
-
-                <li class="teamMember">
-                    <h3 class="name">Анонимный Анониус</h3>
-
-                    <p class="prof">Теневой кардинал</p>
-
-                    <p class="memberDescr">Почетный член массонской ложи.
-                        Главый теневой кукловод современности.
-                        Возможно рептилоид.</p>
-                </li>
-
-                <li class="teamMember">
-                    <h3 class="name">Богдан Шевченко</h3>
-
-                    <p class="prof">Десигн</p>
-
-                    <p class="memberDescr">Уехал бухать на неделю в Воронеж
-                        вернулся дизайнером.
-                        Жестко сидит на behance и энергетиках.</p>
+                <li>
+                    <img src="./assets/students.png" alt="student">
+                    <p>Учащиеся</p>
                 </li>
             </ul>
         </div>
     </section>
 
-    <section class="portfolio">
-        <h2 class="title">Галерея наших работ</h2>
+    <section class="analytics">
+        <div class="container">
+            <div class="players">
+                <div class="title">
+                    Яркие игроки рынка
+                </div>
 
-        <div class="containerSmall">
-
-            <p class="sectionDescr">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et
-                Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the
-                theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor
-                sit amet..", comes from a line in section 1.10.32.</p>
-
-            <div class="filter">
-                <p>Фильтр</p>
-
-                <ul class="filterList">
-                    <li class="filterItem active">
-                        <a href="#">Все</a>
+                <ul>
+                    <li>
+                        <p>Российская электронная школа</p>
+                        Более 9 млн уникальных пользователей за последние полгода
                     </li>
 
-                    <li class="filterItem">
-                        <a href="#">Web дизайн</a>
+                    <li>
+                        <p>Яндекс учебник</p>
+                        Более 3.5 млн уникальных пользователей за последние полгода
                     </li>
 
-                    <li class="filterItem">
-                        <a href="#">Мобильный дизайн</a>
-                    </li>
-
-                    <li class="filterItem">
-                        <a href="#">Фотография</a>
+                    <li>
+                        <p>Учи.ру</p>
+                        Более 42 млн уникальных пользователей за последние полгода
                     </li>
                 </ul>
             </div>
 
-            <div class="portfolioEx">
-                <div class="imgContainer">
-                    <img src="./assets/portfolioItem.jpg" alt="">
+            <div class="monetization">
+                <div class="title">
+                    Монетизация
                 </div>
+
+                <ul>
+                    <li>
+                        <p>Частные школы</p>
+                    </li>
+
+                    <li>
+                        <p>Учащиеся</p>
+                    </li>
+                </ul>
             </div>
 
-            <ul class="portfolioList">
-                <li class="portfolioItem clickable">
-                    <div class="portfolioExpand">
-                        <img src="./assets/magniGlass.svg" alt="">
-                        <p>Увеличить</p>
-                    </div>
-                </li>
-                <!--Ссылка на конфигуратор-->
-                <li class="portfolioItem">
-                    <a href=".configure">
-                        <h2><span>Разработай свой</span><br />Уникальный дизайн</h2>
-                        <img src="./assets/plus.svg" alt="">
-                    </a>
-                </li>
-                <li class="portfolioItem">
-                    <div class="portfolioExpand">
-                        <img src="./assets/magniGlass.svg" alt="">
-                        <p>Увеличить</p>
-                    </div>
-                </li>
-                <li class="portfolioItem">
-                    <div class="portfolioExpand">
-                        <img src="./assets/magniGlass.svg" alt="">
-                        <p>Увеличить</p>
-                    </div>
-                </li>
-                <li class="portfolioItem">
-                    <div class="portfolioExpand">
-                        <img src="./assets/magniGlass.svg" alt="">
-                        <p>Увеличить</p>
-                    </div>
-                </li>
-                <li class="portfolioItem">
-                    <div class="portfolioExpand">
-                        <img src="./assets/magniGlass.svg" alt="">
-                        <p>Увеличить</p>
-                    </div>
-                </li>
-                <li class="portfolioItem">
-                    <div class="portfolioExpand">
-                        <img src="./assets/magniGlass.svg" alt="">
-                        <p>Увеличить</p>
-                    </div>
-                </li>
-                <li class="portfolioItem">
-                    <div class="portfolioExpand">
-                        <img src="./assets/magniGlass.svg" alt="">
-                        <p>Увеличить</p>
-                    </div>
-                </li>
-                <li class="portfolioItem">
-                    <div class="portfolioExpand">
-                        <img src="./assets/magniGlass.svg" alt="">
-                        <p>Увеличить</p>
-                    </div>
-                </li>
-                <li class="portfolioItem">
-                    <div class="portfolioExpand">
-                        <img src="./assets/magniGlass.svg" alt="">
-                        <p>Увеличить</p>
-                    </div>
-                </li>
-                <li class="portfolioItem">
-                    <div class="portfolioExpand">
-                        <img src="./assets/magniGlass.svg" alt="">
-                        <p>Увеличить</p>
-                    </div>
-                </li>
-                <li class="portfolioItem">
-                    <div class="portfolioExpand">
-                        <img src="./assets/magniGlass.svg" alt="">
-                        <p>Увеличить</p>
-                    </div>
-                </li>
-            </ul>
-
         </div>
     </section>
 
-    <!--<div class="stages">
+    <div class="future">
         <div class="container">
-            <h2 class="title">Путь клиента</h2>
-
-            <p class="choosePath">
-                Выбери свой путь работы с нами
-            </p>
-
-            <p class="pathDescr">
-                Путь каждого нашего клиента уникален. Выбери, какой из нижепредложенных путей тебе больше всего
-                интересен и узнай, какие <span>подарки</span> тебя ждут.
-            </p>
-
-            <ul class="slidersList">
-                <li class="sliderItem">
-                    <h3 class="sliderTitle">Концепция</h3>
-
-                    <div class="sliderField">
-                        <svg width="408px" height="100px">
-                            <g class="sliderDots">
-                                <circle fill="white" id="knob" class="sliderDots" cx="10" cy="9.5" r="9.5" />
-                                <circle fill="white" id="knob" class="sliderDots" cx="57" cy="9.5" r="9.5" />
-                                <circle fill="white" id="knob" class="sliderDots" cx="104" cy="9.5" r="9.5" />
-                                <circle fill="white" id="knob" class="sliderDots" cx="150" cy="9.5" r="9.5" />
-                                <circle fill="white" id="knob" class="sliderDots" cx="197" cy="9.5" r="9.5" />
-                                <circle fill="white" id="knob" class="sliderDots" cx="244" cy="9.5" r="9.5" />
-                                <circle fill="white" id="knob" class="sliderDots" cx="290" cy="9.5" r="9.5" />
-                                <circle fill="red" id="knob" class="sliderSelector" cx="10" cy="9.5" r="14" />
-                            </g>
-                            <image id="bg" class="sliderBg" width="408" height="2"
-                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZgAAAACCAYAAABlscrEAAAAT0lEQVRIie3VwQmDUBBF0aOIIWJJ9l+RGBLEL8IUoOu8A7eAmc3rWmsLZrwxYcQLQ9VXl05ERPyzVrcf1V598cOGD9b+wZMyLhERcW8LcAI50Q0/8fCxZQAAAABJRU5ErkJggg==" />
-                        </svg>
-                    </div>
-                </li>
-                <li class="sliderItem">
-                    <h3 class="sliderTitle">Создание</h3>
-
-                    <div class="sliderField"></div>
-                </li>
-                <li class="sliderItem">
-                    <h3 class="sliderTitle">Выпуск</h3>
-
-                    <div class="sliderField"></div>
-                </li>
-            </ul>
-        </div>
-    </div> -->
-
-    <section class="reviews">
-        <div class="container">
-            <h2 class="title">Отзывы</h2>
-
-            <ul class="reviewsList">
-                <li class="reviewItem reviewShow">
-                    <p class="reviewText">
-                        ТАКОЙ САЙТ ЗАПИЛИЛИ Я ПРОСТО В ШОКЕ НЕДЕЛЮ СМОТРЕТ В МАНИТОР, А ПРОДВИЖЕНИЕ ВАЩЕ ПУШКА ЗА НЕДЕЛЮ
-                        ПО
-                        ОРАГНИКЕ
-                        НА ПЕРВУЮ СТРОЧКУ ВЫВОДИТ ЕСЛИ НАЗВАНИЕ СВОЕЙ ФИРМЫ ЗАБИВАЮ.
-                        КОРОЧЕ ВАУ ВСЕМ РЕКОМЕНДУЮ.
-                    </p>
-
-                    <p class="person">
-                        Рулон Обоев, <span>Частный преприниматель.</span>
-                    </p>
-                </li>
-
-                <li class="reviewItem">
-                    <p class="reviewText">
-                        ВАСХИТИТЕНЬНО ПРЕКРАСНО УДИВИТЕЛЬНО, ВСЕГДА О ТАКОМ МЕЧТАЛА!
-                        ЕСЛИ ПОНАДОБИТСЯ ЕЩЕ САЙТ ТО ТОЛЬКО К ВАМ.
-                    </p>
-
-                    <p class="person">
-                        Головач Елена, <span>Человек с тяжелои судьбой.</span>
-                    </p>
-                </li>
-
-                <li class="reviewItem">
-                    <p class="reviewText">
-                        ВАСХИТИТЕНЬНО ПРЕКРАСНО УДИВИТЕЛЬНО, ВСЕГДА О ТАКОМ МЕЧТАЛА!
-                        ЕСЛИ ПОНАДОБИТСЯ ЕЩЕ САЙТ ТО ТОЛЬКО К ВАМ.
-                    </p>
-
-                    <p class="person">
-                        Ютуб Лайков, <span>Нарцисс</span>
-                    </p>
-                </li>
-            </ul>
-
-        </div>
-    </section>
-
-    <section class="configure">
-        <div class="container">
-            <h2 class="title"><span>Итак</span><br />что вам понадобится</h2>
-
-            <p class="sectionDescr">Выберите один или несколько вариантов</p>
-
-            <ul class="optionsList">
-                <li class="option">
-                    <a href=".configure"><button class="siteBtn">Сайт</button></a>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore.
-                    </p>
-                </li>
-
-                <li class="option">
-                    <a href=".configure"><button class="marketBtn">Продвижение</button></a>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore.
-                    </p>
-                </li>
-
-                <li class="option">
-                    <a href=".configure"><button class="supportBtn">Поддержка</button></a>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore.
-                    </p>
-                </li>
-            </ul>
-
-            <button class="beginBtn">Начать</button>
-        </div>
-    </section>
-
-    <section class="feedBack">
-        <div class="container">
-            <h2 class="title">
-                <span>Итак</span>, есть вопросы?
-            </h2>
-
-            <p class="sectionDescr">
-                Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of
-                Good
-                and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
-                during
-                the Renaissance.
-            </p>
-
-            <form action="#">
-                <input class="nameInput" type="text" placeholder="Как вас зовут?">
-                <input class="telInput" type="text" placeholder="Номер телефона">
-                <button type="submit">Отправить</button>
-            </form>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container footerContainer">
-            <div class="leftSide">
-                <a href=".welcomePage">
-                    <img src="./assets/logo.svg" alt="logo" class="navLink">
-                </a>
-
-                <div class="socialMedia">
-                    <img class="mediaItem" src="assets/vk.svg" alt="">
-                    <img class="mediaItem" src="assets/fb.svg" alt="">
-                    <img class="mediaItem" src="assets/ig.svg" alt="">
-                </div>
+            <div class="title">
+                Развитие проекта
             </div>
 
+            <ul>
+                <li>Мобильное приложение для аналитики данных учащихся 2-х частных<br /> образовательных
+                    организаций.<br />
+                    (октябрь 2020)</li>
+                <li>Запуск приложения на платформах общего доступа<br />
+                    (Google Play & App Store)<br />
+                    (декабрь 2020) </li>
+                <li>Расширение количества образовательных учреждений использующих<br /> платформу до 400.<br />
+                    (март 2021)
+                </li>
+                <li>Перевод и адаптация платформы для иностранного рынка с целью<br /> укрепления позиций российских
+                    образовательных систем<br /> на международной арене.
+                    (май 2021)</li>
+                <li>Начало работы с системами дополнительного профессионального<br /> образования и подлючение
+                    обучающихся на
+                    них
+                    пользователей<br /> к платформе.
+                    (август 2021)</li>
+                <li>Увеличение количества частных и государственных образовательных<br /> учреждений использующих
+                    платформу до
+                    1500<br />
+                    (ноябрь 2021)</li>
+            </ul>
+        </div>
 
+        <footer class="footer">
             <a href="#welcomePage" class="goUpBtn navLink">Наверх</a>
+        </footer>
+    </div>
 
-            <div class="footerContacts">
-                <div class="tel"><a href="tel:88123455516">+8 812 345 55 16</a></div>
-                <div class="email"><a href="mailto:itac_studio@gmail.com">ITAC.STUDIO@GMAIL.COM</a></div>
-                <p class="copyright">Все права защищены, &copy; 2020 ИТАК</p>
-            </div>
-
-
-        </div>
-    </footer>
-
+    <object type="image/svg+xml" data="picture.svg">
+        <img src="./123.svg">
+    </object>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/script.js"></script>
 </body>

@@ -2,12 +2,9 @@
 @import '_mixins';
 @import '_welcome';
 @import '_aboutUs';
-@import '_team';
-@import '_portfolio';
-@import '_configure';
-@import '_reviews';
-@import '_feedBack';
-@import '_stages';
+@import '_problem';
+@import '_audience';
+@import '_future';
 
 html {
     box-sizing: border-box; /* width и height включают в себя значения полей и границ */
@@ -27,9 +24,10 @@ body {
     min-width: 320px; /* body не адаптируется под ширину экрана менее 1000px */
     font-family: "Roboto condensed", sans-serif; /* основной шрифт */
     font-size: 16px; /* основной размер шрифта */
-    line-height: 1.5; /* высота линии для всего документа */
+    line-height: 1.3; /* высота линии для всего документа */
     color: $white; /* основной цвет шрифта */
-    background-color: black;
+    background-color: white;
+    text-shadow: -1px 1px 2px black
 }
 
 h1, h2, h3, p, ul {

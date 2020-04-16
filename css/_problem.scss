@@ -1,0 +1,80 @@
+.problem {
+    background: url("../assets/problemBg.png") no-repeat center / cover;
+    background-color: rgba(89, 88, 88, 0.6);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    height: 200vh;
+    padding: 90px 0;
+    text-align: center;
+    position: relative;
+
+    .problemImg {
+        position: absolute;
+        right: 0;
+        top: 20%;
+    }
+
+    ul {
+        margin-top: 70px;
+        max-width: 800px;
+        text-align: left;
+
+        &:last-child {
+            text-align: right;
+            float: right;
+        }
+
+        li {
+            &:first-child {
+                margin-bottom: 50px;
+            }
+
+            .problemTitle {
+                margin-bottom: 25px;
+                font-size: 48px;
+                font-weight: bold;
+            }
+
+            .problemDescr {
+                font-size: 24px;
+                line-height: 1.2;
+            }
+        }
+    }
+
+    .secondTitle {
+        margin-top: 200px;
+    }
+
+    .problemImg2 {
+        position: absolute;
+        left: 0;
+        top: 120vh;   
+    }
+}
+
+.about {
+    color: black;
+    position: relative;
+    padding: 90px 0;
+    font-size: 24px;
+
+    img {
+        position: absolute;
+        right: 0;
+        top: 200px;
+    }
+
+    ul {
+        max-width: 850px;
+        margin-top: 60px;
+
+        li:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.images:hover {
+    fill: red;
+}
