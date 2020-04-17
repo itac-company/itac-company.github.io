@@ -3,15 +3,14 @@
     background-color: rgba(89, 88, 88, 0.6);
     background-blend-mode: multiply;
     background-attachment: fixed;
-    height: 200vh;
-    padding: 90px 0;
+    padding: 90px 0 170px;
     text-align: center;
     position: relative;
 
     .problemImg {
         position: absolute;
         right: 0;
-        top: 20%;
+        top: 290px;
     }
 
     ul {
@@ -21,7 +20,7 @@
 
         &:last-child {
             text-align: right;
-            float: right;
+            margin: 160px 0 0 400px;
         }
 
         li {
@@ -43,13 +42,13 @@
     }
 
     .secondTitle {
-        margin-top: 200px;
+        margin-top: 150px;
     }
 
     .problemImg2 {
         position: absolute;
         left: 0;
-        top: 120vh;   
+        top: 1000px;   
     }
 }
 
@@ -58,16 +57,19 @@
     position: relative;
     padding: 90px 0;
     font-size: 24px;
+    text-shadow: none;
+    text-align: center;
 
     img {
         position: absolute;
         right: 0;
-        top: 200px;
+        top: 250px;
     }
 
     ul {
-        max-width: 850px;
+        max-width: 750px;
         margin-top: 60px;
+        text-align: left;
 
         li:not(:last-child) {
             margin-bottom: 20px;

@@ -147,7 +147,7 @@
     margin-top: 30px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .contacts {
@@ -210,8 +210,10 @@
     }
 }
 
+
+
 .arrow {
-    margin-right: 500px;
+    margin-right: auto;
     animation: arrowAnim 1s alternate infinite;
 }
 

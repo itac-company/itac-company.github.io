@@ -1,0 +1,171 @@
+.pros {
+    background: url("../assets/problemBg.png") no-repeat center / cover;
+    background-color: rgba(89, 88, 88, 0.6);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    padding: 90px 0;
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+
+    .numbersImages {
+        display: flex;
+        position: absolute;
+        max-width: 548px;
+        overflow-x: hidden;
+        left: 0;
+        top: 200px;
+
+        img {
+            height: 380px;
+        }
+    }
+
+    .itemsImages {
+        display: flex;
+        position: absolute;
+        max-width: 514px;
+        overflow-x: hidden;
+        right: 0;
+        top: 1050px;
+
+        img {
+            height: 380px;
+        }
+    }
+
+    .benefits {
+        margin-top: 100px;
+    }
+
+    .numbersList {
+        display: flex;
+        position: relative;
+        height: 700px;
+        margin-top: 50px;  
+        overflow-x: hidden;
+        max-width: 700px;
+        margin-left: 400px;
+
+        
+        
+        ul {
+            position: absolute;
+            text-align: right;
+
+            li {
+               
+            }
+    
+            li:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    
+
+
+    #firstText {
+        transition: .5s;
+    }
+
+    #secondText li {
+        transition: .5s;
+        transform: translateX(3000px);
+        
+    }
+
+    #thirdText li {
+        transform: translateX(3000px);
+        transition: .5s;
+    }
+
+    #fourthText li {
+        transform: translateX(3000px);
+    }
+
+    .insane {
+        transform: translateX(-3000px);
+    }
+
+    
+
+    @keyframes numbersAnimOut {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-3000px);
+        }
+    }
+
+    @keyframes numbersAnimIn {
+        0% {
+            transform: translateX(3000px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .svgImg {
+        width: 59px;
+        height: 59px;
+        fill: white;
+        transition: .3s;
+    
+        &:hover {
+            fill: #75c8cc;
+        }
+    }
+
+    .benefits {
+        text-align: center;
+        
+        .benefitTexts {
+            position: relative;
+            height: 503px;
+            
+    
+            &>div {
+                position: absolute;
+                margin-top: 35px;
+
+                ul {
+                    margin-top: 35px;
+                    text-align: left;
+                    max-width: 700px;
+
+                    li:not(:last-child) {
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+    
+            .secondBenefit {
+                transform: translateX(3500px);
+            }
+    
+            .thirdBenefit {
+                transform: translateX(3500px);
+            }
+    
+            .fourthBenefit {
+                transform: translateX(3500px);
+            }
+        }
+    }
+
+    .svgItems {
+        fill: white;
+        transition: .3s;
+    
+        &:hover {
+            fill: #75c8cc;
+        }
+    }
+    
+}
