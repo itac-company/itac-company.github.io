@@ -100,3 +100,22 @@ numberTwo.addEventListener('click', () => {
         }
     })*/
 })
+
+
+let trs = document.querySelector('.try');
+let tryLi = document.querySelectorAll('.try li');
+let yyy = '0';
+
+trs.addEventListener('click', () => {
+
+    if (yyy > -79 * 3) {
+        yyy -= 79;
+    } else if (yyy < 0) {
+        yyy += 79;
+    }
+    tryLi.forEach(e => {
+        e.style.transform = `translateX(${e.style.transform.replace(/[^-\d]/g, '') - 79}px)`;
+        console.log(`${yyy - 2}`)
+        console.log()
+    })
+})
