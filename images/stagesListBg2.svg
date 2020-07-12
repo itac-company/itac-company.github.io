@@ -1,0 +1,9 @@
+<svg width="360" height="234" viewBox="0 0 360 234" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="360" height="234" fill="#1F2529"/>
+<g style="mix-blend-mode:overlay" opacity="0.4">
+<path d="M285 31L0 0L22 213.5L360 234L285 31Z" fill="#3267B4"/>
+</g>
+<g style="mix-blend-mode:screen" opacity="0.1">
+<path d="M0 0L241.5 234L360 0V234H0L251.5 0H0Z" fill="#56B5DA"/>
+</g>
+</svg>
